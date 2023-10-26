@@ -5,23 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vecto</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body style="background-color: #D4ECDD">
-    <header class="col-12 position-relative w-100 top-0 start-0 d-flex justify-content-between"
+    <!--HEADER-->
+    <header class="col-12 position-relative w-100 top-0 start-0 d-flex justify-content-between overflow-hidden"
         style="background-color: #1E4847">
         <div class="">
-            <img src="image/logo.png" alt="logo" style="height: 160px;" class="my-0">
+            <img src="image/logo.png" alt="logo" style="height: 160px;" class="my-0"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions">
         </div>
         <div class="pe-5 m-3 d-flex align-items-center">
-            <button class="btn btn-success mx-2" type="button">Обекти</button>
-            <button class="btn btn-success mx-2" type="button">Карта</button>
-            <button class="btn btn-success mx-2" type="button">Регистрация</button>
-            <button class="btn btn-success mx-2" type="button">Вход</button>
+            <button class="btn btn-outline-success mx-2 btn-lg"
+                style="--bs-btn-color:#99D19C; --bs-btn-border-color: #99D19C;" type="button">Обекти</button>
+            <button class="btn btn-success mx-2 btn-lg" type="button">Карта</button>
+            <button class="btn btn-success mx-2 btn-lg" type="button">Регистрация</button>
+            <button class="btn btn-success mx-2 btn-lg" type="button">Вход</button>
         </div>
     </header>
+
+    <!--SIDE MENU-->
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel" style="top: 160px;">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" style="top: 160px;">
+            <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+    </div>
+    
+    <!--ОБЕКТИ-->
+
+
+
 </body>
 
 </html>
