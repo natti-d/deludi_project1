@@ -27,6 +27,33 @@ function changeObekti() {
     vhod.classList.add("btn-success")
     vhod.classList.remove("btn-outline-success")
 
+    let obektiNav = document.getElementById('obektiNav')
+    obektiNav.style.color = "#565656"
+    obektiNav.style.borderBlockColor = "#565656"
+    obektiNav.classList.remove("btn-success")
+    obektiNav.classList.add("btn-outline-success")
+
+    let kartaNav = document.getElementById('kartaNav')
+    kartaNav.style.removeProperty("color")
+    kartaNav.style.removeProperty("border-color")
+    kartaNav.style.borderBlockColor = null
+    kartaNav.classList.add("btn-success")
+    kartaNav.classList.remove("btn-outline-success")
+
+    let registraciqNav = document.getElementById('registraciqNav')
+    registraciqNav.style.removeProperty("color")
+    registraciqNav.style.removeProperty("border-color")
+    registraciqNav.style.borderBlockColor = null
+    registraciqNav.classList.add("btn-success")
+    registraciqNav.classList.remove("btn-outline-success")
+
+    let vhodNav = document.getElementById('vhodNav')
+    vhodNav.style.removeProperty("color")
+    vhodNav.style.removeProperty("border-color")
+    vhodNav.style.borderBlockColor = null
+    vhodNav.classList.add("btn-success")
+    vhodNav.classList.remove("btn-outline-success")
+
 }
 
 function changeKarta() {
@@ -56,6 +83,33 @@ function changeKarta() {
     vhod.style.borderBlockColor = null
     vhod.classList.add("btn-success")
     vhod.classList.remove("btn-outline-success")
+
+    let kartaNav = document.getElementById('kartaNav')
+    kartaNav.style.color = "#565656"
+    kartaNav.style.borderBlockColor = "#565656"
+    kartaNav.classList.remove("btn-success")
+    kartaNav.classList.add("btn-outline-success")
+
+    let obektiNav = document.getElementById('obektiNav')
+    obektiNav.style.removeProperty("color")
+    obektiNav.style.removeProperty("border-color")
+    obektiNav.style.borderBlockColor = null
+    obektiNav.classList.add("btn-success")
+    obektiNav.classList.remove("btn-outline-success")
+
+    let registraciqNav = document.getElementById('registraciqNav')
+    registraciqNav.style.removeProperty("color")
+    registraciqNav.style.removeProperty("border-color")
+    registraciqNav.style.borderBlockColor = null
+    registraciqNav.classList.add("btn-success")
+    registraciqNav.classList.remove("btn-outline-success")
+
+    let vhodNav = document.getElementById('vhodNav')
+    vhodNav.style.removeProperty("color")
+    vhodNav.style.removeProperty("border-color")
+    vhodNav.style.borderBlockColor = null
+    vhodNav.classList.add("btn-success")
+    vhodNav.classList.remove("btn-outline-success")
 
 }
 
@@ -87,6 +141,33 @@ function changeRegistraciq() {
     vhod.classList.add("btn-success")
     vhod.classList.remove("btn-outline-success")
 
+    let registraciqNav = document.getElementById('registraciqNav')
+    registraciqNav.style.color = "#565656"
+    registraciqNav.style.borderBlockColor = "#565656"
+    registraciqNav.classList.remove("btn-success")
+    registraciqNav.classList.add("btn-outline-success")
+
+    let kartaNav = document.getElementById('kartaNav')
+    kartaNav.style.removeProperty("color")
+    kartaNav.style.removeProperty("border-color")
+    kartaNav.style.borderBlockColor = null
+    kartaNav.classList.add("btn-success")
+    kartaNav.classList.remove("btn-outline-success")
+
+    let obektiNav = document.getElementById('obektiNav')
+    obektiNav.style.removeProperty("color")
+    obektiNav.style.removeProperty("border-color")
+    obektiNav.style.borderBlockColor = null
+    obektiNav.classList.add("btn-success")
+    obektiNav.classList.remove("btn-outline-success")
+
+    let vhodNav = document.getElementById('vhodNav')
+    vhodNav.style.removeProperty("color")
+    vhodNav.style.removeProperty("border-color")
+    vhodNav.style.borderBlockColor = null
+    vhodNav.classList.add("btn-success")
+    vhodNav.classList.remove("btn-outline-success")
+
 }
 
 function changeVhod() {
@@ -117,124 +198,31 @@ function changeVhod() {
     karta.classList.add("btn-success")
     karta.classList.remove("btn-outline-success")
 
-}
+    let vhodNav = document.getElementById('vhodNav')
+    vhodNav.style.color = "#565656"
+    vhodNav.style.borderBlockColor = "#565656"
+    vhodNav.classList.remove("btn-success")
+    vhodNav.classList.add("btn-outline-success")
 
-function changeObektiNav()
-{
-    let obekti = document.getElementById('obektiNav')
-    obekti.style.color = "#565656"
-    obekti.style.borderBlockColor = "#565656"
-    obekti.classList.remove("btn-success")
-    obekti.classList.add("btn-outline-success")
+    let kartaNav = document.getElementById('kartaNav')
+    kartaNav.style.removeProperty("color")
+    kartaNav.style.removeProperty("border-color")
+    kartaNav.style.borderBlockColor = null
+    kartaNav.classList.add("btn-success")
+    kartaNav.classList.remove("btn-outline-success")
 
-    let karta = document.getElementById('kartaNav')
-    karta.style.removeProperty("color")
-    karta.style.removeProperty("border-color")
-    karta.style.borderBlockColor = null
-    karta.classList.add("btn-success")
-    karta.classList.remove("btn-outline-success")
+    let registraciqNav = document.getElementById('registraciqNav')
+    registraciqNav.style.removeProperty("color")
+    registraciqNav.style.removeProperty("border-color")
+    registraciqNav.style.borderBlockColor = null
+    registraciqNav.classList.add("btn-success")
+    registraciqNav.classList.remove("btn-outline-success")
 
-    let registraciq = document.getElementById('registraciqNav')
-    registraciq.style.removeProperty("color")
-    registraciq.style.removeProperty("border-color")
-    registraciq.style.borderBlockColor = null
-    registraciq.classList.add("btn-success")
-    registraciq.classList.remove("btn-outline-success")
+    let obektiNav = document.getElementById('obektiNav')
+    obektiNav.style.removeProperty("color")
+    obektiNav.style.removeProperty("border-color")
+    obektiNav.style.borderBlockColor = null
+    obektiNav.classList.add("btn-success")
+    obektiNav.classList.remove("btn-outline-success")
 
-    let vhod = document.getElementById('vhodNav')
-    vhod.style.removeProperty("color")
-    vhod.style.removeProperty("border-color")
-    vhod.style.borderBlockColor = null
-    vhod.classList.add("btn-success")
-    vhod.classList.remove("btn-outline-success")
-}
-
-function changeKartaNav()
-{
-    let karta = document.getElementById('kartaNav')
-    karta.style.color = "#565656"
-    karta.style.borderBlockColor = "#565656"
-    karta.classList.remove("btn-success")
-    karta.classList.add("btn-outline-success")
-
-    let obekti = document.getElementById('obektiNav')
-    obekti.style.removeProperty("color")
-    obekti.style.removeProperty("border-color")
-    obekti.style.borderBlockColor = null
-    obekti.classList.add("btn-success")
-    obekti.classList.remove("btn-outline-success")
-
-    let registraciq = document.getElementById('registraciqNav')
-    registraciq.style.removeProperty("color")
-    registraciq.style.removeProperty("border-color")
-    registraciq.style.borderBlockColor = null
-    registraciq.classList.add("btn-success")
-    registraciq.classList.remove("btn-outline-success")
-
-    let vhod = document.getElementById('vhodNav')
-    vhod.style.removeProperty("color")
-    vhod.style.removeProperty("border-color")
-    vhod.style.borderBlockColor = null
-    vhod.classList.add("btn-success")
-    vhod.classList.remove("btn-outline-success")
-}
-
-function changeRegistraciqNav()
-{
-    let registraciq = document.getElementById('registraciqNav')
-    registraciq.style.color = "#565656"
-    registraciq.style.borderBlockColor = "#565656"
-    registraciq.classList.remove("btn-success")
-    registraciq.classList.add("btn-outline-success")
-
-    let karta = document.getElementById('kartaNav')
-    karta.style.removeProperty("color")
-    karta.style.removeProperty("border-color")
-    karta.style.borderBlockColor = null
-    karta.classList.add("btn-success")
-    karta.classList.remove("btn-outline-success")
-
-    let obekti = document.getElementById('obektiNav')
-    obekti.style.removeProperty("color")
-    obekti.style.removeProperty("border-color")
-    obekti.style.borderBlockColor = null
-    obekti.classList.add("btn-success")
-    obekti.classList.remove("btn-outline-success")
-
-    let vhod = document.getElementById('vhodNav')
-    vhod.style.removeProperty("color")
-    vhod.style.removeProperty("border-color")
-    vhod.style.borderBlockColor = null
-    vhod.classList.add("btn-success")
-    vhod.classList.remove("btn-outline-success")
-}
-
-function changeVhodNav()
-{
-    let vhod = document.getElementById('vhodNav')
-    vhod.style.color = "#565656"
-    vhod.style.borderBlockColor = "#565656"
-    vhod.classList.remove("btn-success")
-    vhod.classList.add("btn-outline-success")
-
-    let karta = document.getElementById('kartaNav')
-    karta.style.removeProperty("color")
-    karta.style.removeProperty("border-color")
-    karta.style.borderBlockColor = null
-    karta.classList.add("btn-success")
-    karta.classList.remove("btn-outline-success")
-
-    let registraciq = document.getElementById('registraciqNav')
-    registraciq.style.removeProperty("color")
-    registraciq.style.removeProperty("border-color")
-    registraciq.style.borderBlockColor = null
-    registraciq.classList.add("btn-success")
-    registraciq.classList.remove("btn-outline-success")
-
-    let obekti = document.getElementById('obektiNav')
-    obekti.style.removeProperty("color")
-    obekti.style.removeProperty("border-color")
-    obekti.style.borderBlockColor = null
-    obekti.classList.add("btn-success")
-    obekti.classList.remove("btn-outline-success")
 }
