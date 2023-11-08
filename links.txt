@@ -5,6 +5,7 @@ https://bulgarianonthego.blog/bg/nai-krasivite-mesta-v-bulgaria/
 https://obektiva.com/
 
 https://coolors.co/000501-3a5843-73ab84-86be90-99d19c-89ccb1-d4ecdd-79c7c5-93d4d5-ade1e5
+https://codepen.io/trending
 
 //mahni console.log v script.js
 
