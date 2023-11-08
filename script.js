@@ -171,12 +171,7 @@ function changeRegistraciq() {
 }
 
 function changeVhod() {
-    let vhod = document.getElementById('vhod')
-    vhod.style.color = "#99D19C"
-    vhod.style.borderBlockColor = "#99D19C"
-    console.log("changed 2")
-    vhod.classList.remove("btn-success")
-    vhod.classList.add("btn-outline-success")
+    activating('vhod')
 
     let obekti = document.getElementById('obekti')
     obekti.style.removeProperty("color")
@@ -198,11 +193,6 @@ function changeVhod() {
     karta.classList.add("btn-success")
     karta.classList.remove("btn-outline-success")
 
-    let vhodNav = document.getElementById('vhodNav')
-    vhodNav.style.color = "#565656"
-    vhodNav.style.borderBlockColor = "#565656"
-    vhodNav.classList.remove("btn-success")
-    vhodNav.classList.add("btn-outline-success")
 
     let kartaNav = document.getElementById('kartaNav')
     kartaNav.style.removeProperty("color")
@@ -224,5 +214,20 @@ function changeVhod() {
     obektiNav.style.borderBlockColor = null
     obektiNav.classList.add("btn-success")
     obektiNav.classList.remove("btn-outline-success")
+}
 
+function activating(btn){
+    let a = document.getElementById(btn)
+    a.style.color = "#99D19C"
+    a.style.borderBlockColor = "#99D19C"
+    a.classList.remove("btn-success")
+    a.classList.add("btn-outline-success")
+
+    btn += 'Nav'
+
+    let b = document.getElementById(btn)
+    b.style.color = "#565656"
+    b.style.borderBlockColor = "#565656"
+    b.classList.remove("btn-success")
+    b.classList.add("btn-outline-success")
 }
