@@ -5,7 +5,7 @@ function changeObekti() {
     deactivating('karta')  
     
     
-    let h1 = document.getElementsByTagName('h1')
+    let h1 = document.getElementById('page-name')
     h1.innerText = "Обекти"
 }
 
