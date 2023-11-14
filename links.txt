@@ -13,3 +13,39 @@ TO-DO:
 
 Когато сме на обект и искаме да видим маршрут/местоположение - toddle bottom offcanvas
 git push proekt main 
+
+
+<div class="row m-4 d-flex">
+        <div class="col-md-4 col-12">
+            <div class="card"
+                onmouseover=" this.style.boxShadow = '0 .5rem 1rem #1E4847'; this.style.borderStyle = 'hidden'; this.style.transitionDuration = '0.75s';"
+                onmouseleave="this.style.boxShadow = 'none'; this.style.borderStyle = 'solid'; this.style.transitionDuration = '0.75s'">
+                <img src="image/belogradchik/3.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body" style="background-color: #1E4847">
+                    <h4 class="card-title text-center break-word" style="color: #FFF">Белоградчишки Скали</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-12">
+            <div class="card"
+                onmouseover=" this.style.boxShadow = '0 .5rem 1rem #1E4847'; this.style.borderStyle = 'hidden'; this.style.transitionDuration = '0.75s';"
+                onmouseleave="this.style.boxShadow = 'none'; this.style.borderStyle = 'solid'; this.style.transitionDuration = '0.75s'">
+                <img src="image/koprivshtica/1.png" class="card-img-top img-fluid" alt="...">
+
+                <div class="card-body" style="background-color: #1E4847">
+                    <h4 class="card-title text-center break-word" style="color: #FFF">Копривщица</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-12">
+            <div class="card"
+                onmouseover=" this.style.boxShadow = '0 .5rem 1rem #1E4847'; this.style.borderStyle = 'hidden'; this.style.transitionDuration = '0.75s';"
+                onmouseleave="this.style.boxShadow = 'none'; this.style.borderStyle = 'solid'; this.style.transitionDuration = '0.75s'">
+                <img src="image/krushunski vodopadi/1.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body" style="background-color: #1E4847">
+                    <h4 class="card-title text-center break-word" style="color: #FFF">Крушунски Водопади</h4>
+                </div>
+            </div>
+        </div>
