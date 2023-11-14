@@ -9,10 +9,6 @@ https://codepen.io/trending
 
 
 TO-DO:
-<div class="row d-lg-none d-flex align-items-center mt-3 p-2" style="background-color: #1E4847; color: #FFF;">
-        <h1 class="break-word text-center">Име на страница</h1>
-    </div>
--> add js
 
 
 Когато сме на обект и искаме да видим маршрут/местоположение - toddle bottom offcanvas
