@@ -24,6 +24,19 @@ let locations = [{
         "location_EN": ""
     }]
 },
+{
+    "id": 2,
+    "BG": [{
+        "name_of_object_BG": "",
+        "info_BG": "",
+        "location_BG": "",
+    }],
+    "EN": [{
+        "name_of_object_EN": "",
+        "info_EN": "",
+        "location_EN": ""
+    }]
+},
 
 //Шаблон
     {
