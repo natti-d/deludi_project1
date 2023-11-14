@@ -3,7 +3,10 @@ function changeObekti() {
     deactivating('vhod')
     deactivating('registraciq')
     deactivating('karta')  
-
+    
+    
+    let h1 = document.getElementsByTagName('h1')
+    h1.innerText = "Обекти"
 }
 
 function changeKarta() {
@@ -42,6 +45,7 @@ function activating(btn){
     b.style.borderBlockColor = "#565656"
     b.classList.remove("btn-success")
     b.classList.add("btn-outline-success")
+
 }
 
 function deactivating(btn)

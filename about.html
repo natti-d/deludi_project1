@@ -10,47 +10,54 @@
     <title>About page</title>
 </head>
 <body style="background-color: #D4ECDD">
-     <!--HEADER-->
-     <header class="col-12 position-relative w-100 top-0 start-0 d-flex justify-content-between overflow-hidden"
-     style="background-color: #1E4847" id="top-navigation">
-     <div>
-         <img src="image/logo.png" alt="logo" style="height: 160px;" class="my-0">
-     </div>
-     <div class="pe-5 m-3 d-flex align-items-center">
-         <div class="d-lg-inline d-none d-xs-none d-xxs-none">
-             <button class="btn btn-success mx-2 btn-lg" type="button" id="obekti"
-                 onclick="changeObekti()">Обекти</button>
-             <button class="btn btn-success mx-2 btn-lg" type="button" id="karta"
-                 onclick="changeKarta()">Карта</button>
-             <button class="btn btn-success mx-2 btn-lg" type="button" id="registraciq"
-                 onclick="changeRegistraciq()">Регистрация</button>
-             <button class="btn btn-success mx-2 btn-lg" type="button" id="vhod" onclick="changeVhod()">Вход</button>
-         </div>
-         <button class="btn btn-success mx-2 btn-lg" type="button" data-bs-toggle="offcanvas"
-             data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-             <i class="bi bi-list-ul"></i>
-         </button>
-     </div>
- </header>
+      <!--HEADER-->
+    <header class="col-12 position-relative w-100 top-0 m-0 start-0 d-flex justify-content-between overflow-hidden"
+    style="background-color: #1E4847" id="top-navigation">
+    <div>
+        <img src="image/logo.png" alt="logo" style="height: 160px;" class="my-0">
+    </div>
+    <div class="pe-md-5 m-3 d-flex align-items-center">
+        <div class="d-lg-inline d-none">
+            <button class="btn btn-success mx-2 btn-lg" type="button" id="obekti"
+                onclick="changeObekti()">Обекти</button>
+            <button class="btn btn-success mx-2 btn-lg" type="button" id="karta"
+                onclick="changeKarta()">Карта</button>
+            <button class="btn btn-success mx-2 btn-lg" type="button" id="registraciq"
+                onclick="changeRegistraciq()">Регистрация</button>
+            <button class="btn btn-success mx-2 btn-lg" type="button" id="vhod" onclick="changeVhod()">Вход</button>
+        </div>
+        <button class="btn btn-success mx-2 btn-lg" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            <i class="bi bi-list-ul"></i>
+        </button>
+    </div>
+</header>
 
- <!--SIDE MENU-->
- <div class="offcanvas offcanvas-end overflow-auto" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-     aria-labelledby="offcanvasWithBothOptionsLabel">
-     <div class="offcanvas-header p-0">
-         <img src="image/logo_side.jpg" alt="logo" class="my-0 overflow-hidden p-0" data-bs-toggle="offcanvas"
-             data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-     </div>
-     <div class="offcanvas-body d-flex flex-column">
-         <button class="btn btn-success mx-5 my-2 btn-lg" type="button" id="obektiNav"
-             onclick="changeObekti()">Обекти</button>
-         <button class="btn btn-success mx-5 my-2 btn-lg" type="button" id="kartaNav"
-             onclick="changeKarta()">Карта</button>
-         <button class="btn btn-success mx-5 my-2 btn-lg" type="button" id="registraciqNav"
-             onclick="changeRegistraciq()">Регистрация</button>
-         <button class="btn btn-success mx-5 my-2 btn-lg" type="button" id="vhodNav"
-             onclick="changeVhod()">Вход</button>
-     </div>
- </div>
+<!--SIDE MENU-->
+<div class="offcanvas offcanvas-end overflow-auto" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+    aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header p-0">
+        <img class="d-none d-md-block img-fluid" src="image/logo_side.jpg" alt="logo"
+            class="my-0 overflow-hidden p-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions">
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+        <button type="button" class="btn btn-lg btn-close d-md-none" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        <button class="btn btn-success mx-5 my-2 btn-lg break-word" type="button" id="obektiNav" onclick="changeObekti()"
+            data-bs-dismiss="offcanvas" aria-label="Close">Обекти</button>
+        <button class="btn btn-success mx-5 my-2 btn-lg break-word" type="button" id="kartaNav" onclick="changeKarta()"
+            data-bs-dismiss="offcanvas" aria-label="Close">Карта</button>
+        <button class="btn btn-success mx-5 my-2 btn-lg break-word" type="button" id="registraciqNav"
+            onclick="changeRegistraciq()" data-bs-dismiss="offcanvas" aria-label="Close">Регистрация</button>
+        <button class="btn btn-success mx-5 my-2 btn-lg break-word" type="button" id="vhodNav" onclick="changeVhod()"
+            data-bs-dismiss="offcanvas" aria-label="Close">Вход</button>
+    </div>
+</div>
+<div class="row d-lg-none d-flex align-items-center mt-3 p-2" style="background-color: #1E4847; color: #FFF;">
+    <h1 class="break-word text-center">Име на страница</h1>
+</div>
+
     <div class="conteiner-fluid">   
      <img src="image/map_destination.jpg"  class="" alt="" style="height: 70vh; width: 200vh;">
     </div>
