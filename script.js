@@ -74,7 +74,7 @@ function Load()
     let b = document.getElementById('objects-div')
     for(let i = 0; i < 3; i++)
     {
-        const a = "<div class='col-md-4 col-12'><div class='card'onmouseover=' this.style.boxShadow = '0 .5rem 1rem #1E4847'; this.style.borderStyle = 'hidden'; this.style.transitionDuration = '0.75s'';'onmouseleave='this.style.boxShadow = 'none'; this.style.borderStyle = 'solid'; this.style.transitionDuration = '0.75s''><img src='' class='card-img-top img-fluid'><div class='card-body' style='background-color: #1E4847'><h4 class='card-title text-center break-word'style='color: #FFF'></h4></div></div></div></div> ";
+        let  a = "<div class='col-md-4 col-12'><div class='card'onmouseover=' this.style.boxShadow = '0 .5rem 1rem #1E4847'; this.style.borderStyle = 'hidden'; this.style.transitionDuration = '0.75s'';'onmouseleave='this.style.boxShadow = 'none'; this.style.borderStyle = 'solid'; this.style.transitionDuration = '0.75s''><img src='' class='card-img-top img-fluid'><div class='card-body' style='background-color: #1E4847'><h4 class='card-title text-center break-word'style='color: #FFF'></h4></div></div></div></div> ";
         b.innerHTML = a;
         console.log(i);
     }
