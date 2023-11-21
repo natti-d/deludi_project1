@@ -71,11 +71,41 @@ b.classList.remove("btn-outline-success")
 function Load()
 {
     
-    let b = document.getElementById('objects-div')
-    for(let i = 0; i < 3; i++)
+    let obj_conatiner = document.getElementById('objects-div')
+    for(let i = 0; i < 6; i++)
     {
-       const  a = "<div class='col-md-4 col-12'><div class='card'onmouseover=' this.style.boxShadow = '0 .5rem 1rem #1E4847'; this.style.borderStyle = 'hidden'; this.style.transitionDuration = '0.75s'';'onmouseleave='this.style.boxShadow = 'none'; this.style.borderStyle = 'solid'; this.style.transitionDuration = '0.75s''><img src='' class='card-img-top img-fluid'><div class='card-body' style='background-color: #1E4847'><h4 class='card-title text-center break-word'style='color: #FFF'></h4></div></div></div></div> ";
-        b.innerHTML = a;
-        console.log(i);
+        let object_div1 = document.createElement("div");
+        object_div1.classList.add("col-md-4", "col-12");
+        obj_conatiner.appendChild(object_div1);
+
+        let object_div2 = document.createElement("div");
+        object_div2.classList.add("card");
+        object_div2.onmouseover = function () {
+            object_div2.style.boxShadow = "0 .5rem 1rem #1E4847";
+            object_div2.style.borderStyle = "hidden";
+            object_div2.style.transitionDuration = "0.75s";
+        }
+        object_div2.onmouseleave = function () {
+            object_div2.style.boxShadow = "none";
+            object_div2.borderStyle = "solid";
+            object_div2.transitionDuration = "0.75s";
+        }
+        object_div1.appendChild(object_div2);
+
+        let object_image = document.createElement("img");
+        object_image.classList.add("card-img-top", "img-fluid");
+        object_image.src = "./image/belogradchik/0.png";
+        object_div2.appendChild(object_image);
+
+        let object_div3 = document.createElement("div");
+        object_div3.classList.add("card-body");
+        object_div3.style.backgroundColor = "#1E4847";
+        object_div2.appendChild(object_div3);
+
+        let h4 = document.createElement("h4");
+        h4.classList.add("card-title", "text-center", "break-word");
+        h4.color = "#FFFFFF";
+        h4.innerText = "Name of object";
+        object_div3.appendChild(h4);
     }
 }
