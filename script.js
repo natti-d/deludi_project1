@@ -130,9 +130,12 @@ b.classList.remove("btn-outline-success")
 
 function Load()
 {
+    let obj_conatiner = document.getElementById('objects-div');
+    let lenght = info_locations.length;
     
-    let obj_conatiner = document.getElementById('objects-div')
-    for(let i = 0; i < 6; i++)
+    
+   
+    for(let i = 0; i < lenght; i++)
     {
         let object_div1 = document.createElement("div");
         object_div1.classList.add("col-md-4", "col-12");
@@ -165,7 +168,18 @@ function Load()
         let h4 = document.createElement("h4");
         h4.classList.add("card-title", "text-center", "break-word");
         h4.color = "#FFFFFF";
-        h4.innerText = "Name of object";
+        h4.innerText = "";
         object_div3.appendChild(h4);
+
+        if(bg_lang == true)
+        {
+            h4.innerText = info_locations[i].BG[0].name_of_object;
+            console.log( info_locations[i].BG[0].name_of_object);
+
+        }
+        else
+        {
+            h4.innerText = info_locations[i].EN[0].name_of_object;
+        }
     }
 }
