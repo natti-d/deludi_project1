@@ -6,7 +6,7 @@ var info_locations = [
             "info": "Белоградчишките скали са едно от природните чудеса на България и едно от най-живописните места в страната. Тези необичайни червеникави скални скулптури могат да бъдат намерени в северозападна България.\nПовечето от тях приличат на животни или хора и има много легенди около различните герои.През годините местните жители са развихрили въображението си, създавайки безброй легенди за скалите, фокусирани върху тяхната прилика с животински и човешки фигури.Близнаците, Ученичката, Овчарката, Мечката, Конникът и Мадоната обикновено са най- известни.\nБелоградчишките скали са включени в списъка на световното наследство на ЮНЕСКО.",
             "location": "Белоградчишките скали се простират от запад на изток от връх Ведерник около Белоградчик до село Белотинци. Общата им дължина е 30 километра, а общата им ширина е 6-7 километра. Разстоянието между центъра на града и Белоградчишките скали при Белоградчишката крепост \\\"Калето\\\" е 1 км. Можете да ходите пеша или да карате там. В близост до Белоградчишките скали (крепост) има паркинг.",
         },
-    ],
+        ],
         "EN": [{
             "name_of_object": "Belogradchik Rocks",
             "info": "The Belogradchik rocks are one of Bulgaria's natural wonders and one of the most picturesque spots in the country. These unusual reddish rock sculptures can be found in northwestern Bulgaria.\nThe majority of them resemble animals or people, and there are numerous legends surrounding the various characters.Over the years, locals have let their imaginations run wild, making countless legends about the rocks focused on their resemblance to animal and human figures.The Twins, the Schoolgirl, the Shepherdess, the Bear, the Horseman, and the Madonna tend to be the most well- known.\nThe Belogradchik rocks are included as a UNESCO World Heritage site.",
@@ -57,30 +57,30 @@ var info_locations = [
 ];
 
 var bg_lang = true;
-var happened = true;
+var happened = 1;
 
 function changeObekti() {
     activating('obekti')
     deactivating('vhod')
     deactivating('registraciq')
-    deactivating('karta')  
-    
-    
-   
+    deactivating('karta')
+
+
+
 }
 
 function changeKarta() {
     activating('karta')
     deactivating('obekti')
     deactivating('registraciq')
-    deactivating('vhod')  
+    deactivating('vhod')
 }
 
 function changeRegistraciq() {
     activating('registraciq')
     deactivating('obekti')
     deactivating('vhod')
-    deactivating('karta')  
+    deactivating('karta')
 
 }
 
@@ -88,30 +88,30 @@ function changeVhod() {
     activating('vhod')
     deactivating('obekti')
     deactivating('registraciq')
-    deactivating('karta')  
+    deactivating('karta')
 }
-function changeInfo(){
-    if(happened == true){
-        let a = document.getElementById('moreInfo')
-        a.style.color = "#99D19C"
-        a.style.borderBlockColor = "#99D19C"
-        a.classList.remove("btn-success")
-        a.classList.add("btn-outline-success")
-        happened = false;
+
+function changeInfo() {
+    happened = happened*(-1);
+    if (happened == -1) {
+        let a = document.getElementById('moreInfo');
+        a.style.color = "#99D19C";
+        a.style.borderBlockColor = "#99D19C";
+        a.classList.remove("btn-success");
+        a.classList.add("btn-outline-success");
         console.log(0)
     }
-    else{
-        let a = document.getElementById('moreInfo')
-        a.style.removeProperty("color")
-        a.style.borderBlockColor = null
-        a.classList.add("btn-success")
-        a.classList.remove("btn-outline-success")
-      happened = true;
-      console.log(1)
+    else {
+        let a = document.getElementById('moreInfo');
+        a.style.removeProperty("color");
+        a.style.borderBlockColor = null;
+        a.classList.add("btn-success");
+        a.classList.remove("btn-outline-success");
+        console.log(1)
     }
 }
 
-function activating(btn){
+function activating(btn) {
     let a = document.getElementById(btn)
     a.style.color = "#99D19C"
     a.style.borderBlockColor = "#99D19C"
@@ -127,37 +127,34 @@ function activating(btn){
     b.classList.add("btn-outline-success")
 
     let h1 = document.getElementById('page-name')
-    h1.innerText =String(a.innerText);
+    h1.innerText = String(a.innerText);
 
 }
 
-function deactivating(btn)
-{
-let a = document.getElementById(btn)
-a.style.removeProperty("color")
-a.style.borderBlockColor = null
-a.classList.add("btn-success")
-a.classList.remove("btn-outline-success")
+function deactivating(btn) {
+    let a = document.getElementById(btn)
+    a.style.removeProperty("color")
+    a.style.borderBlockColor = null
+    a.classList.add("btn-success")
+    a.classList.remove("btn-outline-success")
 
-btn += 'Nav'
-let b = document.getElementById(btn)
-b.style.removeProperty("color")
-b.style.removeProperty("border-color")
-b.style.borderBlockColor = null
-b.classList.add("btn-success")
-b.classList.remove("btn-outline-success")
+    btn += 'Nav'
+    let b = document.getElementById(btn)
+    b.style.removeProperty("color")
+    b.style.removeProperty("border-color")
+    b.style.borderBlockColor = null
+    b.classList.add("btn-success")
+    b.classList.remove("btn-outline-success")
 
 }
 
-function Load()
-{
+function Load() {
     let obj_conatiner = document.getElementById('objects-div');
     let lenght = info_locations.length;
-    
-    
-   
-    for(let i = 0; i < lenght; i++)
-    {
+
+
+
+    for (let i = 0; i < lenght; i++) {
         let object_div1 = document.createElement("div");
         object_div1.classList.add("col-md-4", "col-12");
         obj_conatiner.appendChild(object_div1);
@@ -192,14 +189,12 @@ function Load()
         h4.innerText = "";
         object_div3.appendChild(h4);
 
-        if(bg_lang == true)
-        {
+        if (bg_lang == true) {
             h4.innerText = info_locations[i].BG[0].name_of_object;
-            console.log( info_locations[i].BG[0].name_of_object);
+            console.log(info_locations[i].BG[0].name_of_object);
 
         }
-        else
-        {
+        else {
             h4.innerText = info_locations[i].EN[0].name_of_object;
         }
     }
