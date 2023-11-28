@@ -57,6 +57,7 @@ var info_locations = [
 ];
 
 var bg_lang = true;
+var happened = true;
 
 function changeObekti() {
     activating('obekti')
@@ -89,6 +90,26 @@ function changeVhod() {
     deactivating('registraciq')
     deactivating('karta')  
 }
+function changeInfo(){
+    if(happened == true){
+        let a = document.getElementById('moreInfo')
+        a.style.color = "#99D19C"
+        a.style.borderBlockColor = "#99D19C"
+        a.classList.remove("btn-success")
+        a.classList.add("btn-outline-success")
+        happened = false;
+        console.log(0)
+    }
+    else{
+        let a = document.getElementById('moreInfo')
+        a.style.removeProperty("color")
+        a.style.borderBlockColor = null
+        a.classList.add("btn-success")
+        a.classList.remove("btn-outline-success")
+      happened = true;
+      console.log(1)
+    }
+}
 
 function activating(btn){
     let a = document.getElementById(btn)
@@ -106,7 +127,7 @@ function activating(btn){
     b.classList.add("btn-outline-success")
 
     let h1 = document.getElementById('page-name')
-    h1.innerText = a.innerText
+    h1.innerText =String(a.innerText);
 
 }
 
