@@ -52,4 +52,29 @@ git push proekt main
 
 
         //let  a = "<div class='col-md-4 col-12'><div class='card'onmouseover=' this.style.boxShadow = '0 .5rem 1rem #1E4847'; this.style.borderStyle = 'hidden'; this.style.transitionDuration = '0.75s'';'onmouseleave='this.style.boxShadow = 'none'; this.style.borderStyle = 'solid'; this.style.transitionDuration = '0.75s''><img src='./image/belogradchik/0.png' class='card-img-top img-fluid'><div class='card-body' style='background-color: #1E4847'><h4 class='card-title text-center break-word'style='color: #FFF'>Name of object</h4></div></div></div></div> ";
-imgae overlays za bakrgaund s tekst
+image overlays za bakrgaund s 
+
+
+
+    <div class="conteiner pb-5 d-none d-lg-block" style="top: 25%;">
+        <div class="vw-100 position-absolute top-0 bottom-0" style="z-index:-1; filter: blur(6px); background-position: relative; background-size: cover; 
+            background-repeat: no-repeat; background-image: url('image/background.jpg');
+            height: 60vh;">
+        </div>
+
+        
+        <div class="d-flex  align-items-center justify-content-center pt-5 pb-5">
+
+            <p class="h2" style="font-family: Arial, Helvetica, sans-serif; color:aliceblue;">
+                С Vecto може да си харесайте дестинация за пътуване и ние ще ви погнем във всяка ваша стъпка.
+                <br>
+                Използвайте нашата карта и изберете дестинация за вашето пътуване.
+                <br>
+                Ще може да видите как да стигнете до избранат дестинация.
+                <br>
+                Желаем ви приятно пътуване.
+            </p>
+
+
+        </div>
+    </div>
