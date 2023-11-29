@@ -7,6 +7,7 @@
     <title>Vecto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </head>
@@ -47,21 +48,120 @@
         <div class="offcanvas-body d-flex flex-column">
             <button type="button" class="btn btn-lg btn-close d-md-none" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
-            <button class="btn btn-success mx-5 my-2 btn-lg break-word" type="button" id="obektiNav" onclick="changeObekti()"
-                data-bs-dismiss="offcanvas" aria-label="Close">Обекти</button>
-            <button class="btn btn-success mx-5 my-2 btn-lg break-word" type="button" id="kartaNav" onclick="changeKarta()"
-                data-bs-dismiss="offcanvas" aria-label="Close">Карта</button>
+            <button class="btn btn-success mx-5 my-2 btn-lg break-word" type="button" id="obektiNav"
+                onclick="changeObekti()" data-bs-dismiss="offcanvas" aria-label="Close">Обекти</button>
+            <button class="btn btn-success mx-5 my-2 btn-lg break-word" type="button" id="kartaNav"
+                onclick="changeKarta()" data-bs-dismiss="offcanvas" aria-label="Close">Карта</button>
             <button class="btn btn-success mx-5 my-2 btn-lg break-word" type="button" id="registraciqNav"
                 onclick="changeRegistraciq()" data-bs-dismiss="offcanvas" aria-label="Close">Регистрация</button>
-            <button class="btn btn-success mx-5 my-2 btn-lg break-word" type="button" id="vhodNav" onclick="changeVhod()"
-                data-bs-dismiss="offcanvas" aria-label="Close">Вход</button>
+            <button class="btn btn-success mx-5 my-2 btn-lg break-word" type="button" id="vhodNav"
+                onclick="changeVhod()" data-bs-dismiss="offcanvas" aria-label="Close">Вход</button>
         </div>
     </div>
-    <div class="row d-lg-none d-flex align-items-center mt-3 p-2" style="background-color: #1E4847; color: #FFF;">
+    <div class="vw-100 d-lg-none d-block mt-3 py-2" style="background-color: #1E4847; color: #FFF;">
         <h1 class="break-word text-center" id="page-name">Име на страница</h1>
     </div>
 
-    
+    <!--OBJECT-->
+    <div class="row m-4 d-flex" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+    aria-controls="offcanvasBottom">
+        <div class="col-md-4 col-12">
+            <div class="card"
+                onmouseover=" this.style.boxShadow = '0 .5rem 1rem #1E4847'; this.style.borderStyle = 'hidden'; this.style.transitionDuration = '0.75s';"
+                onmouseleave="this.style.boxShadow = 'none'; this.style.borderStyle = 'solid'; this.style.transitionDuration = '0.75s'">
+                <img src="image/belogradchik/3.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body" style="background-color: #1E4847">
+                    <h4 class="card-title text-center break-word" style="color: #FFF">Белоградчишки Скали</h4>
+                    <!--https://codepen.io/ericrasch/pen/kWWzzk-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="vh-100 offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+        aria-labelledby="offcanvasBottomLabel" style="background-color: #CEEAF6;">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title fs-1 position-relative z-1" id="offcanvasBottomLabel">Белоградчишки Скали</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer class="vw-100 bg overflow-hidden position-fixed start-0 end-0 bottom-0"
+        style="background-color: #1E4847; height: 20vh;">
+        <div class="d-none d-lg-block">
+            <div class="mountain position-absolute bottom-0 z-1"
+                style="border-left: 150px solid transparent; border-right: 150px solid transparent; border-bottom: 180px solid #7ac1e4;">
+                <div class="mountain-top position-absolute z-2"
+                    style="right: -65px; border-left: 65px solid transparent; border-right: 65px solid transparent; border-bottom: 77px solid #ceeaf6;">
+                    <div class="mountain-cap-1 position-absolute"
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: -55px;">
+                    </div>
+                    <div class="mountain-cap-2 position-absolute"
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: -25px;">
+                    </div>
+                    <div class="mountain-cap-3 position-absolute"
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: 5px;">
+                    </div>
+                </div>
+            </div>
+            <div class="mountain-two position-absolute bottom-0 z-0"
+                style="border-left: 150px solid transparent; border-right: 150px solid transparent; border-bottom: 180px solid #7ac1e4; left: 80px; bottom: -20px; opacity: .3;">
+                <div class="mountain-top position-absolute z-2"
+                    style="right: -65px; border-left: 65px solid transparent; border-right: 65px solid transparent; border-bottom: 77px solid #ceeaf6;">
+                    <div class="mountain-cap-1 position-absolute"
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: -55px;">
+                    </div>
+                    <div class="mountain-cap-2 position-absolute"
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: -25px;">
+                    </div>
+                    <div class="mountain-cap-3 position-absolute"
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: 5px;">
+                    </div>
+                </div>
+            </div>
+            <div class="mountain-three position-absolute bottom-0 z-0"
+                style="border-left: 150px solid transparent; border-right: 150px solid transparent; border-bottom: 180px solid #7ac1e4; left: -60px; bottom: -10px; opacity: .5;">
+                <div class="mountain-top position-absolute z-2"
+                    style="right: -65px; border-left: 65px solid transparent; border-right: 65px solid transparent; border-bottom: 77px solid #ceeaf6;">
+                    <div class="mountain-cap-1 position-absolute"
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: -55px;">
+                    </div>
+                    <div class="mountain-cap-2 position-absolute"
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: -25px;">
+                    </div>
+                    <div class="mountain-cap-3 position-absolute"
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: 5px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="cloud position-absolute"
+                style="bottom: 100px; -webkit-animation: cloud 50s infinite linear; animation: cloud 50s infinite linear; width: 70px; height: 30px; background: #FFF; -webkit-border-radius: 100px / 50px; border-radius: 100px / 50px;">
+            </div>
+
+            <div class="d-none d-md-block mountain position-absolute bottom-0 end-0 z-1"
+                style="border-left: 150px solid transparent; border-right: 150px solid transparent; border-bottom: 180px solid #7ac1e4;">
+                <div class="mountain-top position-absolute z-2"
+                    style="right: -65px; border-left: 65px solid transparent; border-right: 65px solid transparent; border-bottom: 77px solid #ceeaf6;">
+                    <div class="mountain-cap-1 position-absolute"
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: -55px;">
+                    </div>
+                    <div class="mountain-cap-2 position-absolute"
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: -25px;">
+                    </div>
+                    <div class="mountain-cap-3 position-absolute"
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: 5px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
 
 </body>
+
 </html>

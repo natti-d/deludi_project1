@@ -7,51 +7,9 @@
     <title>Vecto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-    <style>
-        .cloud:before,
-        .cloud:after {
-            position: absolute;
-            width: 70px;
-            height: 30px;
-            background: #fff;
-            -webkit-border-radius: 100px / 50px;
-            border-radius: 100px / 50px;
-        }
-
-        @-webkit-keyframes cloud {
-            0% {
-                left: -100px;
-            }
-
-            100% {
-                left: 1000px;
-            }
-        }
-
-        @keyframes cloud {
-
-            0% {
-                left: -100px;
-            }
-
-            100% {
-                left: 1000px;
-            }
-        }
-
-        .cloud:before {
-            content: '';
-            left: 50px;
-        }
-
-        .cloud:after {
-            content: '';
-            left: 25px;
-            top: -10px;
-        }
-    </style>
 </head>
 
 <body class="m-0 overflow-hidden" style="background-color: #D4ECDD; min-height: 100vh;" onload="Load()">
@@ -108,54 +66,54 @@
     <div class="row m-4 d-flex position-relative overflow-auto" id="objects-div" style="max-height: 40vh;">
         
     </div>
-
+    
+    <!--FOOTER-->
     <div class="vh-25 d-block d-md-none"></div>
     <div style="height: 2vh;"></div>
-    <!--FOOTER-->
     <footer class="vw-100 bg overflow-hidden position-fixed start-0 end-0 bottom-0" style="background-color: #1E4847; height: 20vh;">
         <div class="d-none d-lg-block">
             <div class="mountain position-absolute bottom-0 z-1"
-                style="border-left: 150px solid transparent; border-right: 150px solid transparent; border-bottom: 180px solid #7ac1e4;">
+                style="border-left: 150px solid transparent; border-right: 150px solid transparent; border-bottom: 180px solid #7AC1E4;">
                 <div class="mountain-top position-absolute z-2"
-                    style="right: -65px; border-left: 65px solid transparent; border-right: 65px solid transparent; border-bottom: 77px solid #ceeaf6;">
+                    style="right: -65px; border-left: 65px solid transparent; border-right: 65px solid transparent; border-bottom: 77px solid #CEEAF6;">
                     <div class="mountain-cap-1 position-absolute"
-                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: -55px;">
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #CEEAF6; left: -55px;">
                     </div>
                     <div class="mountain-cap-2 position-absolute"
-                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: -25px;">
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #CEEAF6; left: -25px;">
                     </div>
                     <div class="mountain-cap-3 position-absolute"
-                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: 5px;">
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #CEEAF6; left: 5px;">
                     </div>
                 </div>
             </div>
             <div class="mountain-two position-absolute bottom-0 z-0"
-                style="border-left: 150px solid transparent; border-right: 150px solid transparent; border-bottom: 180px solid #7ac1e4; left: 80px; bottom: -20px; opacity: .3;">
+                style="border-left: 150px solid transparent; border-right: 150px solid transparent; border-bottom: 180px solid #7AC1E4; left: 80px; bottom: -20px; opacity: .3;">
                 <div class="mountain-top position-absolute z-2"
-                    style="right: -65px; border-left: 65px solid transparent; border-right: 65px solid transparent; border-bottom: 77px solid #ceeaf6;">
+                    style="right: -65px; border-left: 65px solid transparent; border-right: 65px solid transparent; border-bottom: 77px solid #CEEAF6;">
                     <div class="mountain-cap-1 position-absolute"
-                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: -55px;">
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #CEEAF6; left: -55px;">
                     </div>
                     <div class="mountain-cap-2 position-absolute"
-                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: -25px;">
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #CEEAF6; left: -25px;">
                     </div>
                     <div class="mountain-cap-3 position-absolute"
-                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: 5px;">
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #CEEAF6; left: 5px;">
                     </div>
                 </div>
             </div>
             <div class="mountain-three position-absolute bottom-0 z-0"
-                style="border-left: 150px solid transparent; border-right: 150px solid transparent; border-bottom: 180px solid #7ac1e4; left: -60px; bottom: -10px; opacity: .5;">
+                style="border-left: 150px solid transparent; border-right: 150px solid transparent; border-bottom: 180px solid #7AC1E4; left: -60px; bottom: -10px; opacity: .5;">
                 <div class="mountain-top position-absolute z-2"
-                    style="right: -65px; border-left: 65px solid transparent; border-right: 65px solid transparent; border-bottom: 77px solid #ceeaf6;">
+                    style="right: -65px; border-left: 65px solid transparent; border-right: 65px solid transparent; border-bottom: 77px solid #CEEAF6;">
                     <div class="mountain-cap-1 position-absolute"
-                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: -55px;">
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #CEEAF6; left: -55px;">
                     </div>
                     <div class="mountain-cap-2 position-absolute"
-                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: -25px;">
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #CEEAF6; left: -25px;">
                     </div>
                     <div class="mountain-cap-3 position-absolute"
-                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: 5px;">
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #CEEAF6; left: 5px;">
                     </div>
                 </div>
             </div>
@@ -165,17 +123,17 @@
             </div>
 
             <div class="d-none d-md-block mountain position-absolute bottom-0 end-0 z-1"
-                style="border-left: 150px solid transparent; border-right: 150px solid transparent; border-bottom: 180px solid #7ac1e4;">
+                style="border-left: 150px solid transparent; border-right: 150px solid transparent; border-bottom: 180px solid #7AC1E4;">
                 <div class="mountain-top position-absolute z-2"
-                    style="right: -65px; border-left: 65px solid transparent; border-right: 65px solid transparent; border-bottom: 77px solid #ceeaf6;">
+                    style="right: -65px; border-left: 65px solid transparent; border-right: 65px solid transparent; border-bottom: 77px solid #CEEAF6;">
                     <div class="mountain-cap-1 position-absolute"
-                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: -55px;">
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #CEEAF6; left: -55px;">
                     </div>
                     <div class="mountain-cap-2 position-absolute"
-                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: -25px;">
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #CEEAF6; left: -25px;">
                     </div>
                     <div class="mountain-cap-3 position-absolute"
-                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #ceeaf6; left: 5px;">
+                        style="top: 70px; border-left: 25px solid transparent; border-right: 25px solid transparent; border-top: 25px solid #CEEAF6; left: 5px;">
                     </div>
                 </div>
             </div>
