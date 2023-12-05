@@ -78,3 +78,9 @@ image overlays za bakrgaund s
 
         </div>
     </div>
+
+    facebook links:
+    https://stackoverflow.com/questions/17536559/how-to-insert-facebook-login-button-using-javascript
+    https://developers.facebook.com/docs/facebook-login/web/login-button/
+    https://developers.facebook.com/docs/javascript
+    https://developers.facebook.com/docs/reference/javascript/FB.XFBML.parse/
