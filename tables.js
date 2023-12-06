@@ -106,18 +106,55 @@ let locations = [
     {
         "id": 8,
         "BG": [{
-            "name_of_object_BG": "",
-            "info_BG": "",
-            "location_BG": "",
+            "name_of_object_BG": "Рилския манастир",
+            "info_BG": "Първоначално е основан през 10 век от св. Йоан Рилски, отшелник живял в близката пещера. Стотици поклонници и туристи идват да посещават мястото всяка година и от векове той е бил от изключително духовно значение.",
+            "location_BG": "Разположен е в Югозападна България, област Кюстендил, община Рила.",
         }],
         "EN": [{
-            "name_of_object_EN": "",
-            "info_EN": "",
-            "location_EN": ""
+            "name_of_object_EN": "The Rila Monastery",
+            "info_EN": "It was originally founded in the 10th century by St. John of Rila, a hermit who lived in a nearby cave. Hundreds of pilgrims and tourists come to visit the site every year and it has been of great spiritual importance for centuries.",
+            "location_EN": "It is located in Southwest Bulgaria, Kyustendil district, Rila municipality."
         }]
     },
-
-
+    {
+        "id": 9,
+        "BG": [{
+            "name_of_object_BG": "Пловдив",
+            "info_BG": "Пловдив се смята за един от най-старите градове в света, както и най-старият все още населен град в Европа, по-древен дори от Атина. Това може да означава само едно – невероятно богата история, римски руини, красива стара архитектура и несравнима атмосфера. ",
+            "location_BG": "Той е разположен по двата бряга на р. Марица в Горнотракийската низина на 42° и 9′ северна ширина и 24° и 45′ източна дължина, а най-ниската му точка е на 160 м надморска височина. Територията му е 101,981 кв. км, а населението на града е около 338 153 души.",
+        }],
+        "EN": [{
+            "name_of_object_EN": "Plovdiv",
+            "info_EN": "Plovdiv is considered one of the oldest cities in the world, as well as the oldest still inhabited city in Europe, older even than Athens. This can only mean one thing – an incredibly rich history, Roman ruins, beautiful old architecture and an unparalleled atmosphere.",
+            "location_EN": "It is located on both banks of the Maritsa River in the Upper Thracian Plain at 42° and 9′ north latitude and 24° and 45′ east longitude, and its lowest point is 160 m above sea level. Its territory is 101,981 sq. km, and the population of the city is about 338,153 people."
+        }]
+    },
+    {
+        "id": 10,
+        "BG": [{
+            "name_of_object_BG": "Варна",
+            "info_BG": "Една от най-добрите летни дестинации в страната, Варна често е наричана морската столица на България. През лятото той се превръща в оживен град с много дейности и фестивали, които да забавляват гостите на града.",
+            "location_BG": "Ва̀рна е най-големият град в Североизточна България, разположен по бреговете на Черно море и Варненското езеро и е административен център на едноименните община Варна·",
+        }],
+        "EN": [{
+            "name_of_object_EN": "Varna",
+            "info_EN": "One of the best summer destinations in the country, Varna is often called the sea capital of Bulgaria. In the summer, it becomes a lively city with many activities and festivals to keep the city's guests entertained.",
+            "location_EN": "Varna is the largest city in North-Eastern Bulgaria, located on the shores of the Black Sea and Lake Varna and is the administrative center of the municipality of the same name, Varna."
+        }]
+    },
+    {
+        "id": 11,
+        "BG": [{
+            "name_of_object_BG": "Седемте рилски езера",
+            "info_BG": "Седемте рилски езера са група ледникови езера и местните жители са им дали имена, вдъхновени най-вече от формата им: Окото, Бъбрекът, Сълзата, Близнакът, Трилистникът, Рибното езеро и Долното езеро. Езерата са разположени в Национален парк Рила, най-големият национален парк в България.",
+            "location_BG": "Разположено в северозападната част на Рила планина, седемте рилски езера са зона със зашеметяваща красота и всеки посетил това място е съгласен, че те са част от най-красивите места в България.",
+        }],
+        "EN": [{
+            "name_of_object_EN": "Тhe seven Rila lakes",
+            "info_EN": "The seven Rila lakes are a group of glacial lakes and the local inhabitants gave them names inspired mostly by their shape: the Eye, the Kidney, the Tear, the Twin, the Shamrock, the Fish Lake and the Lower Lake. The lakes are located in Rila National Park, the largest national park in Bulgaria.",
+            "location_EN": "Located in the northwestern part of the Rila Mountains, the seven Rila lakes are an area of ​​stunning beauty and everyone who has visited this place agrees that they are some of the most beautiful places in Bulgaria."
+        }]
+    }
     //Шаблон
     /*{
         "id": 0,
