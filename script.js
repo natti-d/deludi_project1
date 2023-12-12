@@ -193,6 +193,7 @@ function changeObekti() {
     deactivating('vhod')
     deactivating('registraciq')
     deactivating('karta')
+    deactivating('about')
 
 
 
@@ -203,6 +204,8 @@ function changeKarta() {
     deactivating('obekti')
     deactivating('registraciq')
     deactivating('vhod')
+    deactivating('about')
+
 }
 
 function changeRegistraciq() {
@@ -210,11 +213,20 @@ function changeRegistraciq() {
     deactivating('obekti')
     deactivating('vhod')
     deactivating('karta')
+    deactivating('about')
 
 }
 
 function changeVhod() {
     activating('vhod')
+    deactivating('obekti')
+    deactivating('registraciq')
+    deactivating('karta')
+    deactivating('about')
+}
+function changeZanas() {
+    activating('about')
+    deactivating('vhod')
     deactivating('obekti')
     deactivating('registraciq')
     deactivating('karta')

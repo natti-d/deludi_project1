@@ -28,7 +28,10 @@
                     onclick="changeKarta()">Карта</button>
                 <button class="btn btn-success mx-2 btn-lg" type="button" id="registraciq"
                     onclick="changeRegistraciq()">Регистрация</button>
-                <button class="btn btn-success mx-2 btn-lg" type="button" id="vhod" onclick="changeVhod()">Вход</button>
+                <button class="btn btn-success mx-2 btn-lg" type="button" id="vhod" 
+                   onclick="changeVhod()">Вход</button>
+                <button class="btn btn-success mx-2 btn-lg" type="button" id="about"
+                    onclick="changeZanas()">За нас</button>
             </div>
             <button class="btn btn-success mx-2 btn-lg" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
@@ -56,6 +59,8 @@
                 onclick="changeRegistraciq()" data-bs-dismiss="offcanvas" aria-label="Close">Регистрация</button>
             <button class="btn btn-success mx-5 my-2 btn-lg break-word" type="button" id="vhodNav"
                 onclick="changeVhod()" data-bs-dismiss="offcanvas" aria-label="Close">Вход</button>
+            <button class="btn btn-success mx-5 my-2 btn-lg break-word" type="button" id="aboutNav"
+                onclick="changeZanas()" data-bs-dismiss="offcanvas" aria-label="Close">За нас</button>
         </div>
     </div>
     <div class="vw-100 d-lg-none d-block mt-3 py-2" style="background-color: #1E4847; color: #FFF;">
@@ -64,13 +69,14 @@
 
     <!--ОБЕКТИ-->
     <div class="row m-4 d-flex position-relative overflow-auto" id="objects-div" style="max-height: 40vh;">
-        
+
     </div>
-    
+
     <!--FOOTER-->
     <div class="vh-25 d-block d-md-none"></div>
     <div style="height: 2vh;"></div>
-    <footer class="vw-100 bg overflow-hidden position-fixed start-0 end-0 bottom-0" style="background-color: #1E4847; height: 20vh;">
+    <footer class="vw-100 bg overflow-hidden position-fixed start-0 end-0 bottom-0"
+        style="background-color: #1E4847; height: 20vh;">
         <div class="d-none d-lg-block">
             <div class="mountain position-absolute bottom-0 z-1"
                 style="border-left: 150px solid transparent; border-right: 150px solid transparent; border-bottom: 180px solid #7AC1E4;">
