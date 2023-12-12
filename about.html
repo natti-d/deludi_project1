@@ -12,7 +12,6 @@
 </head>
 
 <body style="background-color: #D4ECDD" class="overflow-x-hidden m-0">
-    <!--HEADER-->
     <header class="col-12 position-relative w-100 top-0 m-0 start-0 d-flex justify-content-between overflow-hidden"
         style="background-color: #1E4847" id="top-navigation">
         <div>
@@ -26,7 +25,10 @@
                     onclick="changeKarta()">Карта</button>
                 <button class="btn btn-success mx-2 btn-lg" type="button" id="registraciq"
                     onclick="changeRegistraciq()">Регистрация</button>
-                <button class="btn btn-success mx-2 btn-lg" type="button" id="vhod" onclick="changeVhod()">Вход</button>
+                <button class="btn btn-success mx-2 btn-lg" type="button" id="vhod" 
+                   onclick="changeVhod()">Вход</button>
+                <button class="btn btn-success mx-2 btn-lg" type="button" id="about"
+                    onclick="changeZanas()">За нас</button>
             </div>
             <button class="btn btn-success mx-2 btn-lg" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
@@ -54,6 +56,8 @@
                 onclick="changeRegistraciq()" data-bs-dismiss="offcanvas" aria-label="Close">Регистрация</button>
             <button class="btn btn-success mx-5 my-2 btn-lg break-word" type="button" id="vhodNav"
                 onclick="changeVhod()" data-bs-dismiss="offcanvas" aria-label="Close">Вход</button>
+            <button class="btn btn-success mx-5 my-2 btn-lg break-word" type="button" id="aboutNav"
+                onclick="changeZanas()" data-bs-dismiss="offcanvas" aria-label="Close">За нас</button>
         </div>
     </div>
     <div class="row d-none d-flex align-items-center mt-3 p-2" style="background-color: #1E4847; color: #FFF;">
