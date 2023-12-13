@@ -12,7 +12,8 @@ var info_locations = [
             "name_of_object": "Belogradchik Rocks",
             "info": "The Belogradchik rocks are one of Bulgaria's natural wonders and one of the most picturesque spots in the country. These unusual reddish rock sculptures can be found in northwestern Bulgaria.\nThe majority of them resemble animals or people, and there are numerous legends surrounding the various characters.Over the years, locals have let their imaginations run wild, making countless legends about the rocks focused on their resemblance to animal and human figures.The Twins, the Schoolgirl, the Shepherdess, the Bear, the Horseman, and the Madonna tend to be the most well- known.\nThe Belogradchik rocks are included as a UNESCO World Heritage site.",
             "location": "The Belogradchik rocks extend from west to east, from Mount Vedernik around Belogradchik to the village of Belotintsi. Their overall length is 30 kilometres, while their total width is 6-7 kilometres. The distance between the city centre and the Belogradchik rocks at the Belogradchik fortress \\\"Kaleto\\\" is 1 km. You can either walk or drive there. A parking area is located near to the Belogradchishki rocks (fortress)."
-        }]
+        }],
+        "url": "https://www.google.com/maps/dir/?api=1&destination=43.6233471,22.6753521&travelmode=driving"
     },
     {
         "id": 1,
