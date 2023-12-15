@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-    <script src="gallery.js"></script>
 </head>
 
 <body class="m-0" style="background-color: #D4ECDD">
@@ -79,24 +78,25 @@
     </div>
 
     <div class="vh-100 offcanvas offcanvas-bottom text-center d-block" tabindex="-1" id="offcanvasBottom"
-        aria-labelledby="offcanvasBottomLabel" style="background-color: #CEEAF6;">
+        aria-labelledby="offcanvasBottomLabel" style="background-color: #CEEAF6; overflow-y: scroll;">
         <div class="d-flex flex-column m-3">
             <div class="text-end">
                 <button type="button" class="btn-close p-3" data-bs-dismiss="offcanvas" aria-label="Close">
                 </button>
             </div>
             <form action="" class="text-start w-100">
-                <fieldset class="p-2 w-100 d-flex position-relative overflow-auto" style="border: solid 2px #1E4847;">
-                    <legend class="fs-1 fw-bold float-none w-auto px-3" style="color: #1E4847;">Белоградчишки Скали
+                <fieldset class="p-2 w-100 d-md-flex d-block position-relative" style="border: solid 2px #1E4847;">
+                    <legend class="fs-1 fw-bold float-none px-3" style="color: #1E4847;" id="name-of-conatiner">
+                        Белоградчишки Скали
                     </legend>
-                    <div>
+                    <div class="col-md-6">
                         <div class="d-flex justify-content-center">
                             <div class="d-lg-flex d-none align-items-center me-5">
                                 <i class="bi bi-arrow-left-circle-fill fs-1" style="color: #1E4847;"></i>
                             </div>
 
-                            <div class="py-5">
-                                <img src="image/belogradchik/1.jpeg" alt="">
+                            <div class="p-3">
+                                <img class="img-fluid" src="image/belogradchik/1.jpeg" alt="">
                             </div>
 
                             <div class="d-lg-flex d-none align-items-center ms-5">
@@ -104,21 +104,29 @@
                             </div>
                         </div>
 
-                        <div class="d-flex justify-content-center">
-                            <button class="btn btn-outline-light font-weight-bold fs-4"
-                                style="background-color: transparent; color: #1E4847; border-color: #1E4847;"
-                                onmouseover="this.style.backgroundColor = '#1E4847'; this.style.color = '#D4ECDD'; this.style.borderStyle = '#D4ECDD';"
-                                onmouseout="this.style.backgroundColor = 'transparent'; this.style.color = '#1E4847'; this.style.borderColor = '#1E4847';"
-                                onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=43.6233471,22.6753521&travelmode=driving', '_blank')">
-                                Как се стига?
-                                <i class="bi bi-map"></i>
-                                <i class="bi bi-geo-alt-fill"></i>
-                            </button>
+                        <div class="d-lg-block justify-content-center">
+                            <div class="d-flex d-lg-none align-items-center mb-2 justify-content-center">
+                                <i class="bi bi-arrow-left-circle-fill fs-1 pe-5" style="color: #1E4847;"></i>
+                                <i class="bi bi-arrow-right-circle-fill fs-1 ps-5" style="color: #1E4847;"></i>
+                            </div>
+
+                            <div class="justify-content-center text-center">
+                                <button class="btn btn-outline-light font-weight-bold fs-4 my-3"
+                                    style="background-color: transparent; color: #1E4847; border-color: #1E4847;"
+                                    onmouseover="this.style.backgroundColor = '#1E4847'; this.style.color = '#D4ECDD'; this.style.borderStyle = '#D4ECDD';"
+                                    onmouseout="this.style.backgroundColor = 'transparent'; this.style.color = '#1E4847'; this.style.borderColor = '#1E4847';"
+                                    onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=43.6233471,22.6753521&travelmode=driving', '_blank')">
+                                    Как се стига?
+                                    <i class="bi bi-map"></i>
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </button>
+                            </div>
+
                         </div>
                     </div>
 
-                    <div class="d-flex justify-content-around">
-                        <p class="text-break fs-4 col-8 m-3 p-3">Белоградчишките скали са едно от природните чудеса на
+                    <div class="d-flex justify-content-around align-items-center w-100 w-md-auto" id="info-conatiner">
+                        <p class="text-break fs-5 fs-lg-4 col-8 m-3 p-3">Белоградчишките скали са едно от природните чудеса на
                             България
                             и едно от най-живописните места в
                             страната. Тези необичайни червеникави скални скулптури могат да бъдат намерени

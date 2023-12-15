@@ -212,47 +212,44 @@ var bg_lang = true;
 var happened = 1;
 
 function changeObekti() {
-    activating('obekti')
-    deactivating('vhod')
-    deactivating('registraciq')
-    deactivating('karta')
-    deactivating('about')
-
-
-
+    activating('obekti');
+    deactivating('vhod');
+    deactivating('registraciq');
+    deactivating('karta');
+    deactivating('about');
 }
 
 function changeKarta() {
-    activating('karta')
-    deactivating('obekti')
-    deactivating('registraciq')
-    deactivating('vhod')
-    deactivating('about')
+    activating('karta');
+    deactivating('obekti');
+    deactivating('registraciq');
+    deactivating('vhod');
+    deactivating('about');
 
 }
 
 function changeRegistraciq() {
-    activating('registraciq')
-    deactivating('obekti')
-    deactivating('vhod')
-    deactivating('karta')
-    deactivating('about')
+    activating('registraciq');
+    deactivating('obekti');
+    deactivating('vhod');
+    deactivating('karta');
+    deactivating('about');
 
 }
 
 function changeVhod() {
-    activating('vhod')
-    deactivating('obekti')
-    deactivating('registraciq')
-    deactivating('karta')
-    deactivating('about')
+    activating('vhod');
+    deactivating('obekti');
+    deactivating('registraciq');
+    deactivating('karta');
+    deactivating('about');
 }
 function changeZanas() {
-    activating('about')
-    deactivating('vhod')
-    deactivating('obekti')
-    deactivating('registraciq')
-    deactivating('karta')
+    activating('about');
+    deactivating('vhod');
+    deactivating('obekti');
+    deactivating('registraciq');
+    deactivating('karta');
 }
 
 function changeInfo() {
@@ -263,52 +260,50 @@ function changeInfo() {
         a.style.borderBlockColor = "#99D19C";
         a.classList.remove("btn-success");
         a.classList.add("btn-outline-success");
-        console.log(0)
     }
     else {
         let a = document.getElementById('moreInfo');
-        a.style.removeProperty("color");
+        /*a.style.color = 'transparent';*/
         a.style.borderBlockColor = null;
         a.classList.add("btn-success");
         a.classList.remove("btn-outline-success");
-        console.log(1)
     }
 }
 
 function activating(btn) {
     let a = document.getElementById(btn)
-    a.style.color = "#99D19C"
-    a.style.borderBlockColor = "#99D19C"
-    a.classList.remove("btn-success")
-    a.classList.add("btn-outline-success")
+    a.style.color = "#99D19C";
+    a.style.borderBlockColor = "#99D19C";
+    a.classList.remove("btn-success");
+    a.classList.add("btn-outline-success");
 
-    btn += 'Nav'
+    btn += 'Nav';
 
     let b = document.getElementById(btn)
-    b.style.color = "#565656"
-    b.style.borderBlockColor = "#565656"
-    b.classList.remove("btn-success")
-    b.classList.add("btn-outline-success")
+    b.style.color = "#565656";
+    b.style.borderBlockColor = "#565656";
+    b.classList.remove("btn-success");
+    b.classList.add("btn-outline-success");
 
-    let h1 = document.getElementById('page-name')
+    let h1 = document.getElementById('page-name');
     h1.innerText = String(a.innerText);
 
 }
 
 function deactivating(btn) {
-    let a = document.getElementById(btn)
-    a.style.removeProperty("color")
-    a.style.borderBlockColor = null
-    a.classList.add("btn-success")
-    a.classList.remove("btn-outline-success")
+    let a = document.getElementById(btn);
+    /*a.style.color = 'transparent';*/
+    a.style.borderBlockColor = null;
+    a.classList.add("btn-success");
+    a.classList.remove("btn-outline-success");
 
-    btn += 'Nav'
-    let b = document.getElementById(btn)
-    b.style.removeProperty("color")
-    b.style.removeProperty("border-color")
-    b.style.borderBlockColor = null
-    b.classList.add("btn-success")
-    b.classList.remove("btn-outline-success")
+    btn += 'Nav';
+    let b = document.getElementById(btn);
+    b.style.removeProperty("color");
+    b.style.removeProperty("border-color");
+    b.style.borderBlockColor = null;
+    b.classList.add("btn-success");
+    b.classList.remove("btn-outline-success");
 
 }
 
