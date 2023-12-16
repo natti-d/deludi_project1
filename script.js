@@ -351,9 +351,18 @@ function Load() {
         h4.innerText = "";
         object_div3.appendChild(h4);
 
+        let name_of_offcanva = document.getElementById("name-of-offcanva");
+
+        /*let image_of_offcanva = document.getElementById("image-of-offcanva");
+        image_of_offcanva.src = info_locations[i].image;
+
+        let info_of_offcanva = document.getElementById("info-of-offcanva");
+/*POPRAVI - IZLIZA SAMO POSLEDEN INDEX*/
         if (bg_lang == true) {
             h4.innerText = info_locations[i].BG[0].name_of_object;
             console.log(info_locations[i].BG[0].name_of_object);
+            /*name_of_offcanva.innerText = info_locations[i].BG[0].name_of_object;
+            info_of_offcanva.innerText = info_locations[i].BG[0].info;*/
 
         }
         else {

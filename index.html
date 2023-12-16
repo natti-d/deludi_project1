@@ -28,10 +28,9 @@
                     onclick="changeKarta()">Карта</button>
                 <button class="btn btn-success mx-2 btn-lg" type="button" id="registraciq"
                     onclick="changeRegistraciq()">Регистрация</button>
-                <button class="btn btn-success mx-2 btn-lg" type="button" id="vhod" 
-                   onclick="changeVhod()">Вход</button>
-                <button class="btn btn-success mx-2 btn-lg" type="button" id="about"
-                    onclick="changeZanas()">За нас</button>
+                <button class="btn btn-success mx-2 btn-lg" type="button" id="vhod" onclick="changeVhod()">Вход</button>
+                <button class="btn btn-success mx-2 btn-lg" type="button" id="about" onclick="changeZanas()">За
+                    нас</button>
             </div>
             <button class="btn btn-success mx-2 btn-lg" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
@@ -68,8 +67,90 @@
     </div>
 
     <!--ОБЕКТИ-->
-    <div class="row m-4 d-flex position-relative overflow-auto pb-5" id="objects-div" style="max-height: 60vh;">
+    <div class="row m-4 d-flex position-relative overflow-auto pb-5" id="objects-div" style="max-height: 60vh;"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+    </div>
 
+    <!--OFFCANVA INFO-->
+    <div class="vh-100 offcanvas offcanvas-bottom text-center d-block" tabindex="-1" id="offcanvasBottom"
+        aria-labelledby="offcanvasBottomLabel" style="background-color: #CEEAF6; overflow-y: scroll;">
+        <div class="d-flex flex-column m-3">
+            <div class="text-end">
+                <button type="button" class="btn-close p-3" data-bs-dismiss="offcanvas" aria-label="Close">
+                </button>
+            </div>
+            <form action="" class="text-start w-100">
+                <fieldset class="p-2 w-100 d-md-flex d-block position-relative" style="border: solid 2px #1E4847;">
+                    <legend class="fs-1 fw-bold float-none px-3" style="color: #1E4847;" id="name-of-offcanva">
+                        Белоградчишките скали
+                    </legend>
+                    <div class="col-md-6 mx-2">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="d-lg-flex d-none align-items-center me-5">
+                                <i class="bi bi-arrow-left-circle-fill fs-1" style="color: #1E4847;"></i>
+                            </div>
+
+                            <div class="p-3">
+                                <img class="img-fluid" src="/image/belogradchik/1.jpeg" id="image-of-offcanva" alt="">
+                            </div>
+
+                            <div class="d-lg-flex d-none align-items-center ms-5">
+                                <i class="bi bi-arrow-right-circle-fill fs-1" style="color: #1E4847;"></i>
+                            </div>
+                        </div>
+
+                        <div class="d-lg-block justify-content-center">
+                            <div class="d-flex d-lg-none align-items-center mb-2 justify-content-center">
+                                <i class="bi bi-arrow-left-circle-fill fs-1 pe-5" style="color: #1E4847;"></i>
+                                <i class="bi bi-arrow-right-circle-fill fs-1 ps-5" style="color: #1E4847;"></i>
+                            </div>
+
+                            <div class="justify-content-center text-center">
+                                <button class="btn btn-outline-light font-weight-bold fs-4 my-3"
+                                    style="background-color: transparent; color: #1E4847; border-color: #1E4847;"
+                                    onmouseover="this.style.backgroundColor = '#1E4847'; this.style.color = '#D4ECDD'; this.style.borderStyle = '#D4ECDD';"
+                                    onmouseout="this.style.backgroundColor = 'transparent'; this.style.color = '#1E4847'; this.style.borderColor = '#1E4847';"
+                                    onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=43.6233471,22.6753521&travelmode=driving', '_blank')">
+                                    Как се стига?
+                                    <i class="bi bi-map"></i>
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </button>
+                            </div>      
+                        </div>
+                    </div>
+
+                    <div class="d-block justify-content-around align-items-center w-100 w-md-auto" id="info-conatiner">
+                        <fieldset class="mx-3 align-items-center" style="border: solid 2px #1E4847; background-color: #D4ECDD;">
+                            <legend class="fs-1 fw-bold float-none px-3" style="color: #1E4847;" id="name-of-offcanva">
+                                Информация за Белоградчишките скали</legend>
+                            <div>
+                                <p class="text-break fs-5 fs-lg-4 col-8 m-3 p-3 w-100" id="info-of-offcanva">
+                                    Белоградчишките
+                                    скали са едно от природните
+                                    чудеса
+                                    на
+                                    България
+                                    и едно от най-живописните места в
+                                    страната. Тези необичайни червеникави скални скулптури могат да бъдат намерени
+                                    в северозападна
+                                    България.<br>Повечето от тях приличат на животни или хора и има много легенди около
+                                    различните
+                                    герои.През годините местните жители са развихрили въображението си, създавайки
+                                    безброй
+                                    легенди
+                                    за скалите, фокусирани върху тяхната прилика с животински и човешки фигури.
+                                    Близнаците,
+                                    Ученичката, Овчарката, Мечката, Конникът и Мадоната обикновено са
+                                    най-известни.<br>Белоградчишките скали са включени в списъка на световното
+                                    наследство на
+                                    ЮНЕСКО.
+                                </p>
+                            </div>
+                        </fieldset>                       
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </div>
 
     <!--FOOTER-->
