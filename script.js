@@ -263,7 +263,7 @@ function changeInfo() {
     }
     else {
         let a = document.getElementById('moreInfo');
-        /*a.style.color = 'transparent';*/
+        a.style.color = '#FFFFFF';
         a.style.borderBlockColor = null;
         a.classList.add("btn-success");
         a.classList.remove("btn-outline-success");
@@ -292,7 +292,7 @@ function activating(btn) {
 
 function deactivating(btn) {
     let a = document.getElementById(btn);
-    /*a.style.color = 'transparent';*/
+    a.style.color = '#FFFFFF';
     a.style.borderBlockColor = null;
     a.classList.add("btn-success");
     a.classList.remove("btn-outline-success");
@@ -311,12 +311,10 @@ function Load() {
     let obj_conatiner = document.getElementById('objects-div');
     let lenght = info_locations.length;
 
-
-
     for (let i = 0; i < lenght; i++) {
         let object_div1 = document.createElement("div");
         object_div1.classList.add("col-md-4", "col-12");
-        obj_conatiner.appendChild(object_div1);
+        obj_conatiner.appendChild(object_div1);        
 
         let object_div2 = document.createElement("div");
         object_div2.classList.add("card");
@@ -331,6 +329,11 @@ function Load() {
             object_div2.transitionDuration = "0.75s";
         }
         object_div1.appendChild(object_div2);
+
+        if (i == lenght - 1) {
+            object_div1.classList.add("pb-md-0", "pb-5")
+            object_div2.classList.add("mb-md-0", "mb-3");
+        }
 
         let object_image = document.createElement("img");
         object_image.classList.add("card-img-top", "img-fluid");
