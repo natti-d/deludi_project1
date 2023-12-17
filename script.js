@@ -1,3 +1,5 @@
+/*Не са добавени чудните мостове да разбирам?
+"images"-array не е осъвършенстван, но е нужен за галерията при off-canvata*/
 var info_locations = [
     {
         "id": 0,
@@ -13,6 +15,13 @@ var info_locations = [
             "location": "The Belogradchik rocks extend from west to east, from Mount Vedernik around Belogradchik to the village of Belotintsi. Their overall length is 30 kilometres, while their total width is 6-7 kilometres. The distance between the city centre and the Belogradchik rocks at the Belogradchik fortress \\\"Kaleto\\\" is 1 km. You can either walk or drive there. A parking area is located near to the Belogradchishki rocks (fortress)."
         }],
         "image": "./image/belogradchik/0.png",
+        "images": "./image/belogradchik/1.jpeg",
+        "images": "./image/belogradchik/2.jpg",
+        "images": "./image/belogradchik/3.png",
+        "images": "./image/belogradchik/4.jpg",
+        "images": "./image/belogradchik/5.jpg",
+        "images": "./image/belogradchik/6.jpg",
+        "images": "./image/belogradchik/7.jpg",
         "url": "https://www.google.com/maps/dir/?api=1&destination=43.6233471,22.6753521&travelmode=driving"
     },
     {
@@ -28,7 +37,9 @@ var info_locations = [
             "info": "Koprivshtitsa is well-known for its historic Bulgarian architecture, folk festivals, and historical landmarks.\nKoprivshtitsa represents one of the best- preserved Renaissance towns in the country, reflecting the essence and atmosphere of the Bulgarian Renaissance period.This town's history has an unbreakable connection to the 19th-century uprisings against the Ottoman Empire, which is why it occupies an important place in the hearts of numerous Bulgarians.\nThe stone bridge of the First Rifle, alongside the house - museums of Dimcho Debelyanov, Lyuben Karavelov, Todor Kableshkov, Georgi Benkovski, and other significant Bulgarian personas and revolutionaries, belong to the most significant attractions in Koprivshtitsa.\nThe National Assembly of Bulgarian Folk Art has been held here every five years since 1965, and the 12th edition will be taking place in 2025. The event gathers together musicians, dancers, and artists from every part of the country to present their work over a period of three days.",
             "location": "Koprivshtitsa is located 12 km from the Sub-Balkan road, east of the capital Sofia (108 km) and Pirdop (27 km), north of Plovdiv (87 km) and Strelcha (21 km). The city is located in the picturesque valley along the Topolnitsa River, in a mountainous area, central part of Sštinska Sredna Gora."
         }],
-        "image": "./image/koprivshtica/1.png",
+        "image": "./image/koprivshtica/0.png",
+        "images": "./image/koprivshtica/1.jpg",
+        "images": "./image/koprivshtica/2.jpg",
         "url": "https://www.google.com/maps/dir/?api=1&destination=42.63585847256458,24.35926561314669&travelmode=driving"
     },
     {
@@ -44,7 +55,9 @@ var info_locations = [
             "info": "The Krushun waterfalls are beyond a doubt one of the most appealing and fascinating places to visit in Bulgaria. Furthermore, they are easily accessible - by vehicle. Additionally, they can be bypassed by following a relatively short eco-trail. As a result, they have come to be one of the most popular natural attractions in our country in the past few years.\nIn essence, the Krushun waterfalls are Bulgaria's most significant travertine cascade. The village of Krushuna lies on the eastern side of the Devetasha Plateau, in a very karst surroundings. The \\\"Maarata\\\" location, where the waterfalls also fall, is located there. The word \\\"Maara\\\" literally means \\\"cave\\\".",
             "location": "Krushuna Waterfalls are a series of waterfalls near the village of Krushuna, Letnitsa Municipality, Lovech Region, Northern Bulgaria. They are located 8 km south of the town of Letnitsa, 1 km south of the village of Krushuna and are known for their picturesqueness. The falls are a long travertine (magenta) cascade, the individual steps of which are the falls themselves."
         }],
-        "image": "./image/krushunski vodopadi/1.png",
+        "image": "./image/krushunski vodopadi/0.png",
+        "images": "./image/krushunski vodopadi/1.jpeg",
+        "images": "./image/krushunski vodopadi/2.jpg",
         "url": "https://www.google.com/maps/dir/?api=1&destination=43.24337254773605,25.03318846438476&travelmode=driving"
     },
     {
@@ -61,6 +74,7 @@ var info_locations = [
             "location": "Arbanasi is a very small village perched on a hill about 5 kilometers from Veliko Tarnovo. \nBesides the spectacular view of Veliko Tarnovo and Tsarevets, Arbanasi also offers old-fashioned cobbled streets and old houses surrounded by high Renaissance stone fences."
         }],
         "image": "./image/arbanasi/0.png",
+        "images": "./image/arbanasi/1.jpg",
         "url": "https://www.google.com/maps/dir/?api=1&destination=43.09892732965902,25.669114842369922&travelmode=driving"
     },
     {
@@ -77,6 +91,8 @@ var info_locations = [
             "location": "Bolata is a locality located on the bay of the same name and is part of the Kaliakra reserve. \nIt is located in the northern part of the Bulgarian Black Sea near the village of Bulgarevo and near a former military station."
         }],
         "image": "./image/zaliv bolata/0.png",
+        "images": "./image/zaliv bolata/1.jpg",
+        "images": "./image/zaliv bolata/2.png",
         "url": "https://www.google.com/maps/dir/?api=1&destination=43.38291871411453,28.469223233818642&travelmode=driving"
     },
     {
@@ -92,7 +108,8 @@ var info_locations = [
             "info": "The bridge is a wonderful destination for a one-day walk in nature with a short mountain hike. Nearby, there is also a designated place for recreation and picnic, which would be a great addition to the walk.",
             "location": "Located above the Arda River and nestled in the embrace of the Rhodopes, towers the Devil's Bridge. It dates back to the beginning of the 19th century, and many local legends are associated with its name."
         }],
-        "image": "./image/dqvolski most/7.png",
+        "image": "./image/dqvolski most/0.png",
+        "images": "./image/dqvolski most/1.webp",
         "url": "https://www.google.com/maps/dir/?api=1&destination=41.620619918877146,25.114086351441838&travelmode=driving"
     },
     {
@@ -108,7 +125,8 @@ var info_locations = [
             "info": "Perperikon is a stone complex of remains from early history, antiquity and the Middle Ages. It is believed that the place was inhabited as early as 5000 BC, with Thracians, Romans, Goths and Romai among its inhabitants.The complex consists of a large megalithic sanctuary, monuments of ancient and medieval fortresses, cathedrals and much more.",
             "location": "The rock town of Perperek, surrounded on three sides by the river, is located 6 km west of the village of Perperek, 2 km south of the village of Gorna Krepost and 4 km east of the village of Stremtsi."
         }],
-        "image": "./image/perperikon/8.png",
+        "image": "./image/perperikon/0.png",
+        "images": "./image/perperikon/1.jpg",
         "url": "https://www.google.com/maps/dir/?api=1&destination=41.71522003157851,25.466604914114416&travelmode=driving"
     },
     {
@@ -124,7 +142,8 @@ var info_locations = [
             "info": "Euxinograd Residence is one of the most romantic buildings in Bulgaria and one of the best places to visit in Bulgaria. The exterior of the mansion is very similar to the French mansions of the 18th century. The residence is ornate, romantic and quite beautiful. The interior is luxurious, with marble fireplaces, French chandeliers, large dining rooms, antique furniture and rare paintings. Expect to see lots of gold and silk!",
             "location": "Located 8 kilometers north of Varna, this 19th-century palace was often used as a holiday home for royalty. The building was built after Prince Battenberg visited Varna in 1880. and was so impressed by the local scenery that he had to own a property in the area."
         }],
-        "image": "./image/rezidenciq/9.png",
+        "image": "./image/rezidenciq/0.png",
+        "images": "./image/rezidenciq/1.jpg",
         "url": "https://www.google.com/maps/dir/?api=1&destination=43.21937022193307,27.99535591366512&travelmode=driving"
     },
     {
@@ -140,7 +159,8 @@ var info_locations = [
             "info": "It was originally founded in the 10th century by St. John of Rila, a hermit who lived in a nearby cave. Hundreds of pilgrims and tourists come to visit the site every year and it has been of great spiritual importance for centuries.",
             "location": "It is located in Southwest Bulgaria, Kyustendil district, Rila municipality."
         }],
-        "image": "./image/rilski manastir/10.png",
+        "image": "./image/rilski manastir/0.png",
+        "images": "./image/rilski manastir/1.jpg",
         "url": "https://www.google.com/maps/dir/?api=1&destination=42.133578247129456,23.340846356458897&travelmode=driving"
     },
     {
@@ -156,7 +176,8 @@ var info_locations = [
             "info": "Plovdiv is considered one of the oldest cities in the world, as well as the oldest still inhabited city in Europe, older even than Athens. This can only mean one thing – an incredibly rich history, Roman ruins, beautiful old architecture and an unparalleled atmosphere.",
             "location": "It is located on both banks of the Maritsa River in the Upper Thracian Plain at 42° and 9′ north latitude and 24° and 45′ east longitude, and its lowest point is 160 m above sea level. Its territory is 101,981 sq. km, and the population of the city is about 338,153 people."
         }],
-        "image": "./image/plovdiv/11.png",
+        "image": "./image/plovdiv/0.png",
+        "images": "./image/plovdiv/1.jpg",
         "url": "https://www.google.com/maps/dir/?api=1&destination=42.13322283522093,24.74651133439881&travelmode=driving"
     },
     {
@@ -172,11 +193,12 @@ var info_locations = [
             "info": "One of the best summer destinations in the country, Varna is often called the sea capital of Bulgaria. In the summer, it becomes a lively city with many activities and festivals to keep the city's guests entertained.",
             "location": "Varna is the largest city in North-Eastern Bulgaria, located on the shores of the Black Sea and Lake Varna and is the administrative center of the municipality of the same name, Varna."
         }],
-        "image": "./image/varna/12.png",
+        "image": "./image/varna/0.png",
+        "images": "./image/varna/1.png",
         "url": "https://www.google.com/maps/dir/?api=1&destination=43.214070145268344,27.914753679216243&travelmode=driving"
     },
     {
-        "id": 11,
+        "id": 11, /*3.jpg snimka ima logo, da se mahne*/
         "BG": [{
             "name_of_object": "Седемте рилски езера",
             "info": "Седемте рилски езера са група ледникови езера и местните жители са им дали имена, вдъхновени най-вече от формата им: Окото, Бъбрекът, Сълзата, Близнакът, Трилистникът, Рибното езеро и Долното езеро. Езерата са разположени в Национален парк Рила, най-големият национален парк в България.",
@@ -188,7 +210,11 @@ var info_locations = [
             "info": "The seven Rila lakes are a group of glacial lakes and the local inhabitants gave them names inspired mostly by their shape: the Eye, the Kidney, the Tear, the Twin, the Shamrock, the Fish Lake and the Lower Lake. The lakes are located in Rila National Park, the largest national park in Bulgaria.",
             "location": "Located in the northwestern part of the Rila Mountains, the seven Rila lakes are an area of ​​stunning beauty and everyone who has visited this place agrees that they are some of the most beautiful places in Bulgaria."
         }],
-        "image": "./image/ezera/13.png",
+        "image": "./image/ezera/0.png",
+        "images": "./image/ezera/1.jpg",
+        "images": "./image/ezera/2.jpg",
+        "images": "./image/ezera/3.jpg",
+        "images": "./image/ezera/4.jpg",
         "url": "https://www.google.com/maps/dir/?api=1&destination=42.203381005679816,23.323261527250764&travelmode=driving"
     }
 
@@ -314,7 +340,7 @@ function Load() {
     for (let i = 0; i < lenght; i++) {
         let object_div1 = document.createElement("div");
         object_div1.classList.add("col-md-4", "col-12");
-        obj_conatiner.appendChild(object_div1);        
+        obj_conatiner.appendChild(object_div1);  
 
         let object_div2 = document.createElement("div");
         object_div2.classList.add("card");
@@ -351,22 +377,33 @@ function Load() {
         h4.innerText = "";
         object_div3.appendChild(h4);
 
-        let name_of_offcanva = document.getElementById("name-of-offcanva");
-
-        /*let image_of_offcanva = document.getElementById("image-of-offcanva");
-        image_of_offcanva.src = info_locations[i].image;
-
-        let info_of_offcanva = document.getElementById("info-of-offcanva");
-/*POPRAVI - IZLIZA SAMO POSLEDEN INDEX*/
         if (bg_lang == true) {
             h4.innerText = info_locations[i].BG[0].name_of_object;
-            console.log(info_locations[i].BG[0].name_of_object);
-            /*name_of_offcanva.innerText = info_locations[i].BG[0].name_of_object;
-            info_of_offcanva.innerText = info_locations[i].BG[0].info;*/
-
+            /*console.log(info_locations[i].images[0]);*/
         }
         else {
             h4.innerText = info_locations[i].EN[0].name_of_object;
         }
     }
+}
+
+/*Не работи*/
+function openOffCanva(){
+    /*Predavane na Indeksi*/
+    let info_object = document.getElementById("info-object");
+    let name_of_offcanva = document.getElementById("name-of-offcanva");
+    let image_of_offcanva = document.getElementById("image-of-offcanva");
+    let location_object = document.getElementById("location-object");
+    if (bg_lang == true) {
+        name_of_offcanva.innerText = info_locations[i].BG[0].name_of_object;
+        info_object.innerText = info_locations[i].BG[0].info;
+        location_object.innerText = info_locations[i].BG[0].location;
+    }
+    else {
+        name_of_offcanva.innerText = info_locations[i].EN[0].name_of_object;
+        info_object.innerText = info_locations[i].EN[0].info;
+        location_object.innerText = info_locations[i].EN[0].location;
+    }
+    image_of_offcanva.src = info_locations[i].image;
+    
 }
