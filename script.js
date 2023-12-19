@@ -15,13 +15,28 @@ var info_locations = [
             "location": "The Belogradchik rocks extend from west to east, from Mount Vedernik around Belogradchik to the village of Belotintsi. Their overall length is 30 kilometres, while their total width is 6-7 kilometres. The distance between the city centre and the Belogradchik rocks at the Belogradchik fortress \\\"Kaleto\\\" is 1 km. You can either walk or drive there. A parking area is located near to the Belogradchishki rocks (fortress)."
         }],
         "image": "./image/belogradchik/0.png",
-        "images": "./image/belogradchik/1.jpeg",
-        "images": "./image/belogradchik/2.jpg",
-        "images": "./image/belogradchik/3.png",
-        "images": "./image/belogradchik/4.jpg",
-        "images": "./image/belogradchik/5.jpg",
-        "images": "./image/belogradchik/6.jpg",
-        "images": "./image/belogradchik/7.jpg",
+        "images": [
+            {
+                "path": "./image/belogradchik/1.jpeg"
+            },
+            {
+                "path": "./image/belogradchik/2.jpg"
+            },
+            {
+                "path": "./image/belogradchik/3.png"
+            },
+            {
+                "path": "./image/belogradchik/4.jpg"
+            },
+            {
+                "path": "image/belogradchik/5.jpg"
+            },
+            {
+                "path": "./image/belogradchik/6.jpg"
+            },
+            {
+                "path": "./image/belogradchik/7.jpg"
+            }],
         "url": "https://www.google.com/maps/dir/?api=1&destination=43.6233471,22.6753521&travelmode=driving"
     },
     {
@@ -30,7 +45,7 @@ var info_locations = [
             "name_of_object": "Копривщица",
             "info": "Копривщица е известна със своята историческа българска архитектура, народни празници и исторически забележителности.\nКопривщица представлява един от най- добре запазените възрожденски градове в страната, отразяващ същността и атмосферата на епохата на българското Възраждане.Историята на този град е неразривно свързана с въстанията срещу Османската империя през 19 век, поради което той заема важно място в сърцата на много българи.\nКаменният мост на Първа пушка, наред с къщите - музеи на Димчо Дебелянов, Любен Каравелов, Тодор Каблешков, Георги Бенковски и други бележити български личности и революционери, са сред най - значимите забележителности на Копривщица.\nОт 1965 г.на всеки пет години тук се провежда Националният събор на българското народно творчество, а през 2025 г.ще се проведе 12 - ото му издание.Събитието събира музиканти, танцьори и художници от всички краища на страната, за да представят своето творчество в продължение на период от три дни.",
             "location": "Копривщица се намира на 12 km от Подбалканския път, източно от столицата София (на 108 km) и от Пирдоп (на 27 km), северно от Пловдив (87 km) и Стрелча (21 km). Градът е разположен в живописната долина по течението на река Тополница, в планински район, централна част на Същинска Средна гора.",
-            
+
         }],
         "EN": [{
             "name_of_object": "Koprivshtitsa",
@@ -38,8 +53,9 @@ var info_locations = [
             "location": "Koprivshtitsa is located 12 km from the Sub-Balkan road, east of the capital Sofia (108 km) and Pirdop (27 km), north of Plovdiv (87 km) and Strelcha (21 km). The city is located in the picturesque valley along the Topolnitsa River, in a mountainous area, central part of Sštinska Sredna Gora."
         }],
         "image": "./image/koprivshtica/0.png",
-        "images": "./image/koprivshtica/1.jpg",
-        "images": "./image/koprivshtica/2.jpg",
+        "images": [
+            { "path": "./image/koprivshtica/1.jpg" },
+            { "path": "./image/koprivshtica/2.jpg" }],
         "url": "https://www.google.com/maps/dir/?api=1&destination=42.63585847256458,24.35926561314669&travelmode=driving"
     },
     {
@@ -56,8 +72,9 @@ var info_locations = [
             "location": "Krushuna Waterfalls are a series of waterfalls near the village of Krushuna, Letnitsa Municipality, Lovech Region, Northern Bulgaria. They are located 8 km south of the town of Letnitsa, 1 km south of the village of Krushuna and are known for their picturesqueness. The falls are a long travertine (magenta) cascade, the individual steps of which are the falls themselves."
         }],
         "image": "./image/krushunski vodopadi/0.png",
-        "images": "./image/krushunski vodopadi/1.jpeg",
-        "images": "./image/krushunski vodopadi/2.jpg",
+        "images": [
+            { "path": "./image/krushunski vodopadi/1.jpeg" },
+            { "path": "./image/krushunski vodopadi/2.jpg" }],
         "url": "https://www.google.com/maps/dir/?api=1&destination=43.24337254773605,25.03318846438476&travelmode=driving"
     },
     {
@@ -66,7 +83,7 @@ var info_locations = [
             "name_of_object": "Арбанаси",
             "info": "Арбанаси е една от най-популярните дестинации и красиви места в България. В това малко селце има множество хотели и ресторанти.Една от най-добрите атракции е църквата „\\\Рождество Христово\\\“.\nВ него има няколко красиви стенописи, датиращи от 16 и 17 век. Можете също така да посетите една от типичните къщи в стила на Възраждането – Констанцалиевата къща – и да научите как хората са живели в онези дни.",
             "location": "Арбанаси е много малко село, кацнало на хълм на около 5 километра от Велико Търново. \nОсвен невероятната гледка към Велико Търново и Царевец, Арбанаси предлага и старомодни калдъръмени улички и стари къщи, заобиколени от високи възрожденски каменни огради.",
-            
+
         }],
         "EN": [{
             "name_of_object": "Arbanasi",
@@ -74,7 +91,10 @@ var info_locations = [
             "location": "Arbanasi is a very small village perched on a hill about 5 kilometers from Veliko Tarnovo. \nBesides the spectacular view of Veliko Tarnovo and Tsarevets, Arbanasi also offers old-fashioned cobbled streets and old houses surrounded by high Renaissance stone fences."
         }],
         "image": "./image/arbanasi/0.png",
-        "images": "./image/arbanasi/1.jpg",
+        "images": [
+            {
+                "path": "./image/arbanasi/1.jpg"
+            }],
         "url": "https://www.google.com/maps/dir/?api=1&destination=43.09892732965902,25.669114842369922&travelmode=driving"
     },
     {
@@ -83,7 +103,7 @@ var info_locations = [
             "name_of_object": "Залив Болата",
             "info": "На Болата е изграден малък пристан, където рибарите опъват въдиците си, както и заведение, предлагащо разхладителни напитки през лятото. Плажът е чист и приятен, а водата плитка, бистра и прохладна. Заливът е отлично място за гмуркане. Това е и единствения резерват в България, включващ в пределите си и акватория (морска площ).",
             "location": "Болата е местност, разположена на едноименния залив и е част от резерват Калиакра. \nНамира се в северната част на Българското Черноморие край село Българево и в близост до бивша военна станция.",
-            
+
         }],
         "EN": [{
             "name_of_object": "Gulf Bolata",
@@ -91,8 +111,11 @@ var info_locations = [
             "location": "Bolata is a locality located on the bay of the same name and is part of the Kaliakra reserve. \nIt is located in the northern part of the Bulgarian Black Sea near the village of Bulgarevo and near a former military station."
         }],
         "image": "./image/zaliv bolata/0.png",
-        "images": "./image/zaliv bolata/1.jpg",
-        "images": "./image/zaliv bolata/2.png",
+        "images": [
+            { "path": "./image/zaliv bolata/1.jpg" },
+            {
+                "path": "./image/zaliv bolata/2.png"
+            }],
         "url": "https://www.google.com/maps/dir/?api=1&destination=43.38291871411453,28.469223233818642&travelmode=driving"
     },
     {
@@ -101,7 +124,7 @@ var info_locations = [
             "name_of_object": "Дяволският мост",
             "info": "Мостът представлява една прекрасна дестинация за еднодневна разходка сред природата с кратък планински преход. В близост е изградено и обособено място за отдих и пикник, което пък би било чудесно допълнение към разходката. ",
             "location": "Разположен над река Арда и сгушен в прегръдката на Родопите, се извисява Дяволският мост. Той датира от началото на 19-ти век, а с името му са свързани немалко местни легенди. ",
-           
+
         }],
         "EN": [{
             "name_of_object": "The Devil's Bridge",
@@ -109,7 +132,9 @@ var info_locations = [
             "location": "Located above the Arda River and nestled in the embrace of the Rhodopes, towers the Devil's Bridge. It dates back to the beginning of the 19th century, and many local legends are associated with its name."
         }],
         "image": "./image/dqvolski most/0.png",
-        "images": "./image/dqvolski most/1.webp",
+        "images": [{
+            "path": "./image/dqvolski most/1.webp"
+        }],
         "url": "https://www.google.com/maps/dir/?api=1&destination=41.620619918877146,25.114086351441838&travelmode=driving"
     },
     {
@@ -118,7 +143,7 @@ var info_locations = [
             "name_of_object": "Перперикон",
             "info": "Перперикон представлява каменен комплекс от останки от ранната история, античността и средновековието. Смята се, че мястото е било населено още през 5000 г. пр. Хр., като част от обитателите му са били траките, римляните, готите и ромеите. Комплексът се състои от голямо мегалитно светилище, паметници от антични и средновековни крепости, катедрали и много други.",
             "location": "Скалният град Перперек, ограден от три страни от реката, се намира на 6 км западно от село Перперек, на 2 км южно от село Горна крепост и на 4 км източно от село Стремци.",
-           
+
         }],
         "EN": [{
             "name_of_object": "Perperikon",
@@ -126,7 +151,9 @@ var info_locations = [
             "location": "The rock town of Perperek, surrounded on three sides by the river, is located 6 km west of the village of Perperek, 2 km south of the village of Gorna Krepost and 4 km east of the village of Stremtsi."
         }],
         "image": "./image/perperikon/0.png",
-        "images": "./image/perperikon/1.jpg",
+        "images": [{
+            "path": "./image/perperikon/1.jpg"
+        }],
         "url": "https://www.google.com/maps/dir/?api=1&destination=41.71522003157851,25.466604914114416&travelmode=driving"
     },
     {
@@ -135,7 +162,7 @@ var info_locations = [
             "name_of_object": "Резиденция Евксиноград",
             "info": "Резиденция Евксиноград е една от най-романтичните сгради в България и едно от най-добрите места за посещение в България.Външността на имението много прилича на френските имения от 18-ти век. Резиденцията е богато украсена, романтична и доста красива. Интериорът е луксозен, с мраморни камини, френски полилеи, големи трапезарии, антични мебели и редки картини. Очаквайте да видите много злато и коприна!",
             "location": "Разположен на 8 километра северно от Варна, този дворец от 19-ти век често е бил използван като ваканционен дом за кралски особи. Сградата е построена, след като принц Батенберг посети Варна през 1880г. и беше толкова впечатлен от местната природа, че трябваше да има имот в района.",
-           
+
         }],
         "EN": [{
             "name_of_object": "Residence Euxinograd",
@@ -143,7 +170,9 @@ var info_locations = [
             "location": "Located 8 kilometers north of Varna, this 19th-century palace was often used as a holiday home for royalty. The building was built after Prince Battenberg visited Varna in 1880. and was so impressed by the local scenery that he had to own a property in the area."
         }],
         "image": "./image/rezidenciq/0.png",
-        "images": "./image/rezidenciq/1.jpg",
+        "images": [{
+            "path": "./image/rezidenciq/1.jpg"
+        }],
         "url": "https://www.google.com/maps/dir/?api=1&destination=43.21937022193307,27.99535591366512&travelmode=driving"
     },
     {
@@ -152,7 +181,7 @@ var info_locations = [
             "name_of_object": "Рилския манастир",
             "info": "Първоначално е основан през 10 век от св. Йоан Рилски, отшелник живял в близката пещера. Стотици поклонници и туристи идват да посещават мястото всяка година и от векове той е бил от изключително духовно значение.",
             "location": "Разположен е в Югозападна България, област Кюстендил, община Рила.",
-           
+
         }],
         "EN": [{
             "name_of_object": "The Rila Monastery",
@@ -160,7 +189,9 @@ var info_locations = [
             "location": "It is located in Southwest Bulgaria, Kyustendil district, Rila municipality."
         }],
         "image": "./image/rilski manastir/0.png",
-        "images": "./image/rilski manastir/1.jpg",
+        "images": [{
+            "path": "./image/rilski manastir/1.jpg"
+        }],
         "url": "https://www.google.com/maps/dir/?api=1&destination=42.133578247129456,23.340846356458897&travelmode=driving"
     },
     {
@@ -169,7 +200,7 @@ var info_locations = [
             "name_of_object": "Пловдив",
             "info": "Пловдив се смята за един от най-старите градове в света, както и най-старият все още населен град в Европа, по-древен дори от Атина. Това може да означава само едно – невероятно богата история, римски руини, красива стара архитектура и несравнима атмосфера. ",
             "location": "Той е разположен по двата бряга на р. Марица в Горнотракийската низина на 42° и 9′ северна ширина и 24° и 45′ източна дължина, а най-ниската му точка е на 160 м надморска височина. Територията му е 101,981 кв. км, а населението на града е около 338 153 души.",
-           
+
         }],
         "EN": [{
             "name_of_object": "Plovdiv",
@@ -177,7 +208,9 @@ var info_locations = [
             "location": "It is located on both banks of the Maritsa River in the Upper Thracian Plain at 42° and 9′ north latitude and 24° and 45′ east longitude, and its lowest point is 160 m above sea level. Its territory is 101,981 sq. km, and the population of the city is about 338,153 people."
         }],
         "image": "./image/plovdiv/0.png",
-        "images": "./image/plovdiv/1.jpg",
+        "images": [{
+            "path": "./image/plovdiv/1.jpg"
+        }],
         "url": "https://www.google.com/maps/dir/?api=1&destination=42.13322283522093,24.74651133439881&travelmode=driving"
     },
     {
@@ -186,7 +219,7 @@ var info_locations = [
             "name_of_object": "Варна",
             "info": "Една от най-добрите летни дестинации в страната, Варна често е наричана морската столица на България. През лятото той се превръща в оживен град с много дейности и фестивали, които да забавляват гостите на града.",
             "location": "Ва̀рна е най-големият град в Североизточна България, разположен по бреговете на Черно море и Варненското езеро и е административен център на едноименните община Варна·",
-           
+
         }],
         "EN": [{
             "name_of_object": "Varna",
@@ -194,7 +227,9 @@ var info_locations = [
             "location": "Varna is the largest city in North-Eastern Bulgaria, located on the shores of the Black Sea and Lake Varna and is the administrative center of the municipality of the same name, Varna."
         }],
         "image": "./image/varna/0.png",
-        "images": "./image/varna/1.png",
+        "images": [{
+            "path": "./image/varna/1.png"
+        }],
         "url": "https://www.google.com/maps/dir/?api=1&destination=43.214070145268344,27.914753679216243&travelmode=driving"
     },
     {
@@ -203,7 +238,7 @@ var info_locations = [
             "name_of_object": "Седемте рилски езера",
             "info": "Седемте рилски езера са група ледникови езера и местните жители са им дали имена, вдъхновени най-вече от формата им: Окото, Бъбрекът, Сълзата, Близнакът, Трилистникът, Рибното езеро и Долното езеро. Езерата са разположени в Национален парк Рила, най-големият национален парк в България.",
             "location": "Разположено в северозападната част на Рила планина, седемте рилски езера са зона със зашеметяваща красота и всеки посетил това място е съгласен, че те са част от най-красивите места в България.",
-            
+
         }],
         "EN": [{
             "name_of_object": "Тhe seven Rila lakes",
@@ -211,10 +246,19 @@ var info_locations = [
             "location": "Located in the northwestern part of the Rila Mountains, the seven Rila lakes are an area of ​​stunning beauty and everyone who has visited this place agrees that they are some of the most beautiful places in Bulgaria."
         }],
         "image": "./image/ezera/0.png",
-        "images": "./image/ezera/1.jpg",
-        "images": "./image/ezera/2.jpg",
-        "images": "./image/ezera/3.jpg",
-        "images": "./image/ezera/4.jpg",
+        "images": [
+            {
+                "path": "./image/ezera/1.jpg"
+            },
+            {
+                "path": "./image/ezera/2.jpg"
+            },
+            {
+                "path": "./image/ezera/3.jpg"
+            },
+            {
+                "path": "./image/ezera/4.jpg"
+            }],
         "url": "https://www.google.com/maps/dir/?api=1&destination=42.203381005679816,23.323261527250764&travelmode=driving"
     }
 
@@ -279,7 +323,7 @@ function changeZanas() {
 }
 
 function changeInfo() {
-    happened = happened*(-1);
+    happened = happened * (-1);
     if (happened == -1) {
         let a = document.getElementById('moreInfo');
         a.style.color = "#99D19C";
@@ -333,14 +377,14 @@ function deactivating(btn) {
 
 }
 
+let lenght = info_locations.length;
 function Load() {
     let obj_conatiner = document.getElementById('objects-div');
-    let lenght = info_locations.length;
 
     for (let i = 0; i < lenght; i++) {
         let object_div1 = document.createElement("div");
         object_div1.classList.add("col-md-4", "col-12");
-        obj_conatiner.appendChild(object_div1);  
+        obj_conatiner.appendChild(object_div1);
 
         let object_div2 = document.createElement("div");
         object_div2.classList.add("card");
@@ -379,22 +423,28 @@ function Load() {
 
         if (bg_lang == true) {
             h4.innerText = info_locations[i].BG[0].name_of_object;
-            /*console.log(info_locations[i].images[0]);*/
+            console.log(info_locations[i].BG[0].name_of_object);
         }
         else {
             h4.innerText = info_locations[i].EN[0].name_of_object;
         }
+        object_div1.addEventListener("click", function () {
+            openOffCanva(i);
+        });
+
     }
 }
 
-/*Не работи*/
-function openOffCanva(){
-    /*Predavane na Indeksi*/
+
+function openOffCanva(i) {
+    console.log(1);
     let info_object = document.getElementById("info-object");
     let name_of_offcanva = document.getElementById("name-of-offcanva");
     let image_of_offcanva = document.getElementById("image-of-offcanva");
     let location_object = document.getElementById("location-object");
     if (bg_lang == true) {
+        console.log(3);
+        console.log(4);
         name_of_offcanva.innerText = info_locations[i].BG[0].name_of_object;
         info_object.innerText = info_locations[i].BG[0].info;
         location_object.innerText = info_locations[i].BG[0].location;
@@ -404,6 +454,6 @@ function openOffCanva(){
         info_object.innerText = info_locations[i].EN[0].info;
         location_object.innerText = info_locations[i].EN[0].location;
     }
-    image_of_offcanva.src = info_locations[i].image;
-    
+    image_of_offcanva.src = info_locations[i].images[0].path;
+
 }
