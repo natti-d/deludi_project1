@@ -7,5 +7,8 @@ var acounts = [
 
 },
 ];
+/*doesnt work*/
 const button = document.getElementById('password');
 button.addEventListener("input",function(){ alert("too long"); })
+
+
