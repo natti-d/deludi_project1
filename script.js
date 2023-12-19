@@ -1,5 +1,3 @@
-/*Не са добавени чудните мостове да разбирам?
-"images"-array не е осъвършенстван, но е нужен за галерията при off-canvata*/
 var info_locations = [
     {
         "id": 0,
@@ -280,6 +278,8 @@ var info_locations = [
 
 var bg_lang = true;
 var happened = 1;
+var url;
+var object_id;
 
 function changeObekti() {
     activating('obekti');
@@ -423,37 +423,62 @@ function Load() {
 
         if (bg_lang == true) {
             h4.innerText = info_locations[i].BG[0].name_of_object;
-            console.log(info_locations[i].BG[0].name_of_object);
         }
         else {
             h4.innerText = info_locations[i].EN[0].name_of_object;
         }
-        object_div1.addEventListener("click", function () {
-            openOffCanva(i);
-        });
 
+        object_div1.addEventListener("click", function () {
+            object_id = i;
+            openOffCanva();
+        });
     }
 }
-
-
-function openOffCanva(i) {
-    console.log(1);
+var photoIndex;
+function openOffCanva() {
+    photoIndex = 0;
     let info_object = document.getElementById("info-object");
     let name_of_offcanva = document.getElementById("name-of-offcanva");
     let image_of_offcanva = document.getElementById("image-of-offcanva");
     let location_object = document.getElementById("location-object");
     if (bg_lang == true) {
-        console.log(3);
-        console.log(4);
-        name_of_offcanva.innerText = info_locations[i].BG[0].name_of_object;
-        info_object.innerText = info_locations[i].BG[0].info;
-        location_object.innerText = info_locations[i].BG[0].location;
+        name_of_offcanva.innerText = info_locations[object_id].BG[0].name_of_object;
+        info_object.innerText = info_locations[object_id].BG[0].info;
+        location_object.innerText = info_locations[object_id].BG[0].location;
     }
     else {
-        name_of_offcanva.innerText = info_locations[i].EN[0].name_of_object;
-        info_object.innerText = info_locations[i].EN[0].info;
-        location_object.innerText = info_locations[i].EN[0].location;
+        name_of_offcanva.innerText = info_locations[object_id].EN[0].name_of_object;
+        info_object.innerText = info_locations[object_id].EN[0].info;
+        location_object.innerText = info_locations[object_id].EN[0].location;
+    }    
+    image_of_offcanva.src = info_locations[object_id].images[photoIndex].path;
+    /*NAPRAVI STRELKITE BUTONI*/
+    if(photoIndex == 0){
+        let left_arrow_small = document.getElementById("left-arrow-small");
+        let left_arrow_large = document.getElementById("left-arrow-large");
     }
-    image_of_offcanva.src = info_locations[i].images[0].path;
+    url = info_locations[object_id].url;
+}
 
+function nextPhoto() {
+    photoIndex++;
+    setPhoto();
+}
+
+function prevPhoto() {
+    photoIndex--;
+    if(photoIndex == 0){
+        let left_arrow_small = document.getElementById("left-arrow-small");
+        let left_arrow_large = document.getElementById("left-arrow-large");
+    }
+    setPhoto();
+}
+
+function setPhoto(){   
+    let image_of_offcanva = document.getElementById("image-of-offcanva"); 
+    image_of_offcanva.src = info_locations[object_id].images[photoIndex].path;
+}
+
+function openMaps() {
+    window.open(url, "_blank");
 }

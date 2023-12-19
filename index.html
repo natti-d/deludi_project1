@@ -86,23 +86,23 @@
                     </legend>
                     <div class="col-md-6 mx-2">
                         <div class="d-flex justify-content-center align-items-center">
-                            <div class="d-lg-flex d-none align-items-center me-5">
-                                <i class="bi bi-arrow-left-circle-fill fs-1" style="color: #1E4847;"></i>
+                            <div class="d-lg-flex d-none align-items-center me-5" onclick="prevPhoto()">
+                                <i class="bi bi-arrow-left-circle-fill fs-1" style="color: #1E4847;" id="left-arrow-large"></i>
                             </div>
 
                             <div class="p-3">
                                 <img class="img-fluid" src="" id="image-of-offcanva" alt="">
                             </div>
 
-                            <div class="d-lg-flex d-none align-items-center ms-5">
-                                <i class="bi bi-arrow-right-circle-fill fs-1" style="color: #1E4847;"></i>
+                            <div class="d-lg-flex d-none align-items-center ms-5" onclick="nextPhoto()">
+                                <i class="bi bi-arrow-right-circle-fill fs-1" style="color: #1E4847;" id="right-arrow-large"></i>
                             </div>
                         </div>
 
                         <div class="d-lg-block justify-content-center">
                             <div class="d-flex d-lg-none align-items-center mb-2 justify-content-center">
-                                <i class="bi bi-arrow-left-circle-fill fs-1 pe-5" style="color: #1E4847;"></i>
-                                <i class="bi bi-arrow-right-circle-fill fs-1 ps-5" style="color: #1E4847;"></i>
+                                <i class="bi bi-arrow-left-circle-fill fs-1 pe-5" style="color: #1E4847;" onclick="prevPhoto()" id="left-arrow-small"></i>
+                                <i class="bi bi-arrow-right-circle-fill fs-1 ps-5" style="color: #1E4847;" onclick="nextPhoto()"id="right-arrow-small"></i>
                             </div>
 
                             <div class="justify-content-center text-center">
@@ -110,7 +110,7 @@
                                     style="background-color: transparent; color: #1E4847; border-color: #1E4847;"
                                     onmouseover="this.style.backgroundColor = '#1E4847'; this.style.color = '#D4ECDD'; this.style.borderStyle = '#D4ECDD';"
                                     onmouseout="this.style.backgroundColor = 'transparent'; this.style.color = '#1E4847'; this.style.borderColor = '#1E4847';"
-                                    onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=43.6233471,22.6753521&travelmode=driving', '_blank')">
+                                    onclick="openMaps()">
                                     Как се стига?
                                     <i class="bi bi-map"></i>
                                     <i class="bi bi-geo-alt-fill"></i>
