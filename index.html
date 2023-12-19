@@ -67,13 +67,14 @@
     </div>
 
     <!--ОБЕКТИ-->
-    <div class="row m-4 d-flex position-relative overflow-auto pb-5" id="objects-div" onclick="openOffCanva()" style="max-height: 60vh;"
+    <div class="row m-4 d-flex position-relative overflow-auto pb-5" id="objects-div" style="max-height: 60vh;"
         data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
     </div>
 
     <!--OFFCANVA INFO-->
     <div class="vh-100 offcanvas offcanvas-bottom text-center d-block" tabindex="-1" id="offcanvasBottom"
-        aria-labelledby="offcanvasBottomLabel" style="background-color: #CEEAF6; overflow-y: scroll;">
+        aria-labelledby="offcanvasBottomLabel" style="background-color: #CEEAF6; overflow-y: scroll;"
+        onclick="openOffCanva()">
         <div class="d-flex flex-column m-3">
             <div class="text-end">
                 <button type="button" class="btn-close p-3" data-bs-dismiss="offcanvas" aria-label="Close">
