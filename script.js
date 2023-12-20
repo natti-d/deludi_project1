@@ -276,6 +276,8 @@ var info_locations = [
     },*/
 ];
 
+/*popravi kavichkite, imat // */
+
 var bg_lang = true;
 var happened = 1;
 var url;
