@@ -226,7 +226,7 @@ var info_locations = [
         }],
         "image": "./image/varna/0.png",
         "images": [{
-            "path": "./image/varna/1.png"
+            "path": "./image/varna/1.jpeg"
         }],
         "url": "https://www.google.com/maps/dir/?api=1&destination=43.214070145268344,27.914753679216243&travelmode=driving"
     },
@@ -282,6 +282,7 @@ var bg_lang = true;
 var happened = 1;
 var url;
 var object_id;
+var photoIndex;
 
 function changeObekti() {
     activating('obekti');
@@ -432,14 +433,13 @@ function Load() {
 
         object_div1.addEventListener("click", function () {
             object_id = i;
+            photoIndex = 0;
             openOffCanva();
         });
     }
 }
-var photoIndex;
 
 function openOffCanva() {
-    photoIndex = 0;
     let info_object = document.getElementById("info-object");
     let name_of_offcanva = document.getElementById("name-of-offcanva");
     let image_of_offcanva = document.getElementById("image-of-offcanva");
@@ -456,16 +456,9 @@ function openOffCanva() {
     }
     image_of_offcanva.src = info_locations[object_id].images[photoIndex].path;
 
-    if (photoIndex == 0) {
-        console.log(photoIndex);
-
-        let left_arrow_small = document.getElementById("left-arrow-small");
-        let left_arrow_large = document.getElementById("left-arrow-large");
-        left_arrow_large.classList.add("opacity-25");
-        left_arrow_small.classList.add("opacity-25");
-        left_arrow_large.classList.remove("opacity-100");
-        left_arrow_small.classList.remove("opacity-100");
-    }
+    
+    checkNext();
+    checkPrev();
     url = info_locations[object_id].url;
 }
 
@@ -483,21 +476,14 @@ function setPhoto() {
     let image_of_offcanva = document.getElementById("image-of-offcanva");
     image_of_offcanva.src = info_locations[object_id].images[photoIndex].path;
 
-    let left_arrow_small = document.getElementById("left-arrow-small");
-    let left_arrow_large = document.getElementById("left-arrow-large");
-    if (photoIndex == 0) {
-        left_arrow_large.classList.add("opacity-25");
-        left_arrow_small.classList.add("opacity-25");
-        left_arrow_large.classList.remove("opacity-100");
-        left_arrow_small.classList.remove("opacity-100");
-    }
-    else {
-        left_arrow_large.classList.add("opacity-100");
-        left_arrow_small.classList.add("opacity-100");
-        left_arrow_large.classList.remove("opacity-25");
-        left_arrow_small.classList.remove("opacity-25");
-    }
+    checkNext();
+    checkPrev();
 
+
+
+}
+
+function checkNext() {
     let right_arrow_large = document.getElementById("right-arrow-large");
     let right_arrow_small = document.getElementById("right-arrow-small");
     if (photoIndex == info_locations[object_id].images.length - 1) {
@@ -514,7 +500,23 @@ function setPhoto() {
     }
 }
 
+function checkPrev() {
+    let left_arrow_small = document.getElementById("left-arrow-small");
+    let left_arrow_large = document.getElementById("left-arrow-large");
+    if (photoIndex == 0) {
+        left_arrow_large.classList.add("opacity-25");
+        left_arrow_small.classList.add("opacity-25");
+        left_arrow_large.classList.remove("opacity-100");
+        left_arrow_small.classList.remove("opacity-100");
+    }
+    else {
+        left_arrow_large.classList.add("opacity-100");
+        left_arrow_small.classList.add("opacity-100");
+        left_arrow_large.classList.remove("opacity-25");
+        left_arrow_small.classList.remove("opacity-25");
+    }
+}
+
 function openMaps() {
     window.open(url, "_blank");
-    console.log(url);
 }
