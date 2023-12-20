@@ -11,15 +11,14 @@ var acounts = [
 const button = document.getElementById('password');
 button.addEventListener("input",function(){ alert("too long"); })
 
-const loginForm = document.getElementById('Login_id');
-loginForm.addEventListener('submit', Validation);
-
-function Validation(event)
+function ValidationRegister()
 {
-    event.preventDefault();
+   
 
     const email = document.getElementById('email');
     const password = document.getElementById('password');
+    const confirmPass = document.getElementById('confirmPass');
+    const username = document.getElementById('username');
 
     if(!validateEmail(email.value))
     {
@@ -31,22 +30,35 @@ function Validation(event)
         alert('Please enter correct email!');
         return;
     }
+    for(let i;i <acounts.length;i++)
+    {
+       if(username == acounts[i].username)
+       {
+         alert('Username exist!');
+       }
+    }
+    if(password == confirmPass)
+    {
+       alert('Passwords doesnt match!');
+    }
 
-    alert('Log in is Successful')
+    alert('Registration is Successful');
 }
 
 function vaidateEmail()
 {
-    let conditions = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const conditions = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return conditions.test(email);
 }
 
 function validatePass()
 {
-    let minLenght = 8;
-    let HasUppercase = /[A-Z]/.test(password);
-    let HasLowercase = /[a-z]/.test(password);
-    let HasNumbers = /[0-9]/.test(password);
+    const minLenght = 8;
+    const HasUppercase = /[A-Z]/.test(password);
+    const HasLowercase = /[a-z]/.test(password);
+    const HasNumbers = /\d/.test(password);
 
     return (password.Lenght >= minLenght && HasUppercase && HasLowercase && HasNumbers);
 }
+
+
