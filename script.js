@@ -435,6 +435,7 @@ function Load() {
     }
 }
 var photoIndex;
+
 function openOffCanva() {
     photoIndex = 0;
     let info_object = document.getElementById("info-object");
@@ -450,12 +451,18 @@ function openOffCanva() {
         name_of_offcanva.innerText = info_locations[object_id].EN[0].name_of_object;
         info_object.innerText = info_locations[object_id].EN[0].info;
         location_object.innerText = info_locations[object_id].EN[0].location;
-    }    
+    }
     image_of_offcanva.src = info_locations[object_id].images[photoIndex].path;
-    /*NAPRAVI STRELKITE BUTONI*/
-    if(photoIndex == 0){
+
+    if (photoIndex == 0) {
+        console.log(photoIndex);
+
         let left_arrow_small = document.getElementById("left-arrow-small");
         let left_arrow_large = document.getElementById("left-arrow-large");
+        left_arrow_large.classList.add("opacity-25");
+        left_arrow_small.classList.add("opacity-25");
+        left_arrow_large.classList.remove("opacity-100");
+        left_arrow_small.classList.remove("opacity-100");
     }
     url = info_locations[object_id].url;
 }
@@ -467,18 +474,45 @@ function nextPhoto() {
 
 function prevPhoto() {
     photoIndex--;
-    if(photoIndex == 0){
-        let left_arrow_small = document.getElementById("left-arrow-small");
-        let left_arrow_large = document.getElementById("left-arrow-large");
-    }
     setPhoto();
 }
 
-function setPhoto(){   
-    let image_of_offcanva = document.getElementById("image-of-offcanva"); 
+function setPhoto() {
+    let image_of_offcanva = document.getElementById("image-of-offcanva");
     image_of_offcanva.src = info_locations[object_id].images[photoIndex].path;
+
+    let left_arrow_small = document.getElementById("left-arrow-small");
+    let left_arrow_large = document.getElementById("left-arrow-large");
+    if (photoIndex == 0) {
+        left_arrow_large.classList.add("opacity-25");
+        left_arrow_small.classList.add("opacity-25");
+        left_arrow_large.classList.remove("opacity-100");
+        left_arrow_small.classList.remove("opacity-100");
+    }
+    else {
+        left_arrow_large.classList.add("opacity-100");
+        left_arrow_small.classList.add("opacity-100");
+        left_arrow_large.classList.remove("opacity-25");
+        left_arrow_small.classList.remove("opacity-25");
+    }
+
+    let right_arrow_large = document.getElementById("right-arrow-large");
+    let right_arrow_small = document.getElementById("right-arrow-small");
+    if (photoIndex == info_locations[object_id].images.length - 1) {
+        right_arrow_large.classList.add("opacity-25");
+        right_arrow_small.classList.add("opacity-25");
+        right_arrow_large.classList.remove("opacity-100");
+        right_arrow_small.classList.remove("opacity-100");
+    }
+    else {
+        right_arrow_large.classList.add("opacity-100");
+        right_arrow_small.classList.add("opacity-100");
+        right_arrow_large.classList.remove("opacity-25");
+        right_arrow_small.classList.remove("opacity-25");
+    }
 }
 
 function openMaps() {
     window.open(url, "_blank");
+    console.log(url);
 }
