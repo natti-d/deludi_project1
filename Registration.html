@@ -67,10 +67,10 @@
     </div>
     <!--Registration-->
     <div class="p-5 m-5" style=" border-radius: 25px; background-color: #1E4847">
-        <form>
+        <form id="Register_id">
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label" style="color: #D4ECDD;">Username</label>
-                <input type="email" class="form-control" id="username" aria-describedby="emailHelp">
+                <label for="exampleInputUsername1" class="form-label" style="color: #D4ECDD;">Username</label>
+                <input type="username" class="form-control" id="username" aria-describedby="usernameHelp">
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label" style="color: #D4ECDD;">Email address</label>
@@ -84,7 +84,7 @@
                 <label for="exampleInputPassword2" class="form-label" style="color: #D4ECDD;">Confirm Password</label>
                 <input type="password" class="form-control" id="confirmPass">
             </div>
-            <button type="submit" class="btn btn-success">Register</button>
+            <button type="submit" class="btn btn-success" onclick="ValidationRegister()">Register</button>
             <div class="pt-5">
                 <h5 class="break-word text-center" style="color: #D4ECDD;">Or continue with</h1>
             </div>
