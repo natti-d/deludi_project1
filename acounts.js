@@ -1,4 +1,4 @@
-var acounts = [
+var accounts = [
     {
         "id": 0,
         "username": "admin",
@@ -19,22 +19,28 @@ function ValidationLogIn() {
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
     let username = document.getElementById('username').value;
+    let a = true;
 
-    for (let i = 0; i <= acounts.length; i++) {
-        if (username == acounts[i].username && email == acounts[i].email && password == acounts[i].password) {
+    for (let i = 0; i <= accounts.length; i++) {
+        if (username == accounts[i].username & email == accounts[i].email & password == accounts[i].password) {
             alert("Log in was Successful!");
+            a = false;
         }
-        else{
+        else {
             console.log(false);
         }
+    }
+
+    if (a) {
+        alert("Check your information!");
     }
 }
 
 function ValidationRegister() {
-    let email = document.getElementById('email');
-    let password = document.getElementById('password');
-    let confirmPass = document.getElementById('confirmPass');
-    let username = document.getElementById('username');
+    let email = document.getElementById('email').value;
+    let password = document.getElementById('password').value;
+    let confirmPass = document.getElementById('confirmPass').value;
+    let username = document.getElementById('username').value;
 
     if (!validateEmail(email.value)) {
         alert('Please enter correct email!');
@@ -44,8 +50,8 @@ function ValidationRegister() {
         alert('Please enter correct email!');
         return;
     }
-    for (let i; i <= acounts.length; i++) {
-        if (username == acounts[i].username) {
+    for (let i = 0; i <= accounts.length; i++) {
+        if (username == accounts[i].username) {
             alert('Username exist!');
         }
     }
