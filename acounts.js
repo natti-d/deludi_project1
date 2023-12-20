@@ -7,9 +7,20 @@ var acounts = [
 
 },
 ];
-/*doesnt work*/
-const button = document.getElementById('password');
-button.addEventListener("input",function(){ alert("too long"); })
+function ValidationLogIn()
+{
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+    const username = document.getElementById('username');
+
+    for(let i;i <=acounts.length;i++)
+    {
+       if(username == acounts[i].username && email == acounts[i].email && password == acounts[i].password)
+       {
+         alert('Log in was Successful!');
+       }
+    }
+}
 
 function ValidationRegister()
 {
@@ -30,7 +41,7 @@ function ValidationRegister()
         alert('Please enter correct email!');
         return;
     }
-    for(let i;i <acounts.length;i++)
+    for(let i;i <=acounts.length;i++)
     {
        if(username == acounts[i].username)
        {
