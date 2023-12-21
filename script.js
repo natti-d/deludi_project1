@@ -118,8 +118,12 @@ var info_locations = [
         "images": [
             { "path": "./image/zaliv bolata/1.jpg" },
             {
-                "path": "./image/zaliv bolata/2.png"
-            }],
+                "path": "./image/zaliv bolata/2.jpg"
+            },
+            {
+                "path": "./image/zaliv bolata/3.jpg"
+            }
+        ],
         "url": "https://www.google.com/maps/dir/?api=1&destination=43.38291871411453,28.469223233818642&travelmode=driving"
     },
     {
@@ -138,6 +142,15 @@ var info_locations = [
         "image": "./image/dqvolski most/0.png",
         "images": [{
             "path": "./image/dqvolski most/1.webp"
+        },
+        {
+            "path": "./image/dqvolski most/2.jpg"
+        },
+        {
+            "path": "./image/dqvolski most/3.jpg"
+        },
+        {
+            "path": "./image/dqvolski most/2.jpg"
         }],
         "url": "https://www.google.com/maps/dir/?api=1&destination=41.620619918877146,25.114086351441838&travelmode=driving"
     },
