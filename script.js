@@ -469,7 +469,8 @@ function openOffCanva() {
 }
 
 function nextPhoto() {
-    photoIndex++;
+    photoIndex = photoIndex + 1;
+    console.log(1);
     setPhoto();
 }
 
