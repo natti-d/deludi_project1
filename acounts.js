@@ -4,6 +4,12 @@ var accounts = [
         "username": "admin",
         "email": "admin@gmail.com",
         "password": "admin"
+    },
+    {
+        "id": 1,
+        "username": "test",
+        "email": "test@gmail.com",
+        "password": "test"
     }
     /*Shablon
     {
@@ -15,24 +21,29 @@ var accounts = [
     */
 ];
 
+setInterval(ValidationLogIn, 100000);
+
 function ValidationLogIn() {
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
     let username = document.getElementById('username').value;
     let a = true;
+    console.log(email);
+    console.log(username);
+    console.log(password);
 
     for (let i = 0; i <= accounts.length; i++) {
-        if (username == accounts[i].username & email == accounts[i].email & password == accounts[i].password) {
-            alert("Log in was Successful!");
-            a = false;
+        if (username == accounts[i].username) {
+            if (email == accounts[i].email) {
+                if (password == accounts[i].password) {
+                    alert("Log in was Successful!");
+                    a = false;
+                }
+            }
         }
         else {
-            console.log(false);
+            console.log(accounts[i].username);
         }
-    }
-
-    if (a) {
-        alert("Check your information!");
     }
 }
 
