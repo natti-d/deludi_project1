@@ -21,29 +21,26 @@ var accounts = [
     */
 ];
 
-setInterval(ValidationLogIn, 100000);
-
-function ValidationLogIn() {
+function validationLogIn() {
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
     let username = document.getElementById('username').value;
-    let a = true;
-    console.log(email);
-    console.log(username);
-    console.log(password);
+    let failed_Login = true;
 
     for (let i = 0; i <= accounts.length; i++) {
         if (username == accounts[i].username) {
             if (email == accounts[i].email) {
                 if (password == accounts[i].password) {
-                    alert("Log in was Successful!");
-                    a = false;
+                    alert("Влязохте успешно!");
+                    failed_Login = false;
                 }
             }
         }
-        else {
-            console.log(accounts[i].username);
-        }
+    }
+    console.log(1);
+    alert("Грешни данни! Моля проверете пак!");
+
+    if (failed_Login) {
     }
 }
 
