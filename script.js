@@ -92,6 +92,12 @@ var info_locations = [
         "images": [
             {
                 "path": "./image/arbanasi/1.jpg"
+            },
+            {
+                "path": "./image/arbanasi/2.jpg"
+            },
+            {
+                "path": "./image/arbanasi/3.jpg"
             }],
         "url": "https://www.google.com/maps/dir/?api=1&destination=43.09892732965902,25.669114842369922&travelmode=driving"
     },
@@ -231,7 +237,7 @@ var info_locations = [
         "url": "https://www.google.com/maps/dir/?api=1&destination=43.214070145268344,27.914753679216243&travelmode=driving"
     },
     {
-        "id": 11, /*3.jpg snimka ima logo, da se mahne*/
+        "id": 11,
         "BG": [{
             "name_of_object": "Седемте рилски езера",
             "info": "Седемте рилски езера са група ледникови езера и местните жители са им дали имена, вдъхновени най-вече от формата им: Окото, Бъбрекът, Сълзата, Близнакът, Трилистникът, Рибното езеро и Долното езеро. Езерата са разположени в Национален парк Рила, най-големият национален парк в България.",
@@ -252,7 +258,7 @@ var info_locations = [
                 "path": "./image/ezera/2.jpg"
             },
             {
-                "path": "./image/ezera/3.jpg"
+                "path": "./image/ezera/ne.jpg"
             },
             {
                 "path": "./image/ezera/4.jpg"
@@ -456,7 +462,7 @@ function openOffCanva() {
     }
     image_of_offcanva.src = info_locations[object_id].images[photoIndex].path;
 
-    
+
     checkNext();
     checkPrev();
     url = info_locations[object_id].url;
