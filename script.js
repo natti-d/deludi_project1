@@ -18,16 +18,34 @@ var info_locations = [
                 "path": "./image/belogradchik/1.jpeg"
             },
             {
+                "path": "./image/belogradchik/1.jpg"
+            },
+            {
+                "path": "./image/belogradchik/2.jpg"
+            },
+            {
                 "path": "./image/belogradchik/2.jpg"
             },
             {
                 "path": "./image/belogradchik/3.png"
             },
             {
+                "path": "./image/belogradchik/3.jpg"
+            },
+            {
+                "path": "./image/belogradchik/4.jpg"
+            },
+            {
                 "path": "./image/belogradchik/4.jpg"
             },
             {
                 "path": "image/belogradchik/5.jpg"
+            },
+            {
+                "path": "./image/belogradchik/5.jpg"
+            },
+            {
+                "path": "./image/belogradchik/6.jpg"
             },
             {
                 "path": "./image/belogradchik/6.jpg"
@@ -94,6 +112,12 @@ var info_locations = [
                 "path": "./image/arbanasi/1.jpg"
             },
             {
+                "path": "./image/arbanasi/1.jpg"
+            },
+            {
+                "path": "./image/arbanasi/2.jpg"
+            },
+            {
                 "path": "./image/arbanasi/2.jpg"
             },
             {
@@ -117,6 +141,10 @@ var info_locations = [
         "image": "./image/zaliv bolata/0.png",
         "images": [
             { "path": "./image/zaliv bolata/1.jpg" },
+            { "path": "./image/zaliv bolata/1.jpg" },
+            {
+                "path": "./image/zaliv bolata/2.jpg"
+            },
             {
                 "path": "./image/zaliv bolata/2.jpg"
             },
@@ -147,10 +175,10 @@ var info_locations = [
             "path": "./image/dqvolski most/2.jpg"
         },
         {
-            "path": "./image/dqvolski most/3.jpg"
+            "path": "./image/dqvolski most/2.jpg"
         },
         {
-            "path": "./image/dqvolski most/2.jpg"
+            "path": "./image/dqvolski most/3.jpg"
         }],
         "url": "https://www.google.com/maps/dir/?api=1&destination=41.620619918877146,25.114086351441838&travelmode=driving"
     },
@@ -168,9 +196,22 @@ var info_locations = [
             "location": "The rock town of Perperek, surrounded on three sides by the river, is located 6 km west of the village of Perperek, 2 km south of the village of Gorna Krepost and 4 km east of the village of Stremtsi."
         }],
         "image": "./image/perperikon/0.png",
-        "images": [{
-            "path": "./image/perperikon/1.jpg"
-        }],
+        "images": [
+            {
+               "path": "./image/perperikon/1.jpg"
+            },
+            {
+                "path": "./image/perperikon/1.jpg"
+            },
+            {
+                "path": "./image/perperikon/2.jpg"
+            },
+            {
+                "path": "./image/perperikon/2.jpg"
+            },
+            {
+                "path": "./image/perperikon/3.jpg"
+            }],
         "url": "https://www.google.com/maps/dir/?api=1&destination=41.71522003157851,25.466604914114416&travelmode=driving"
     },
     {
@@ -187,9 +228,22 @@ var info_locations = [
             "location": "Located 8 kilometers north of Varna, this 19th-century palace was often used as a holiday home for royalty. The building was built after Prince Battenberg visited Varna in 1880. and was so impressed by the local scenery that he had to own a property in the area."
         }],
         "image": "./image/rezidenciq/0.png",
-        "images": [{
-            "path": "./image/rezidenciq/1.jpg"
-        }],
+        "images": [
+            {
+              "path": "./image/rezidenciq/1.jpg"
+            },
+            {
+                "path": "./image/rezidenciq/1.jpg"
+            },
+            {
+                "path": "./image/rezidenciq/2.jpg"
+            },
+            {
+                "path": "./image/rezidenciq/2.jpg"
+            },
+            {
+                "path": "./image/rezidenciq/3.jpg"
+            }],
         "url": "https://www.google.com/maps/dir/?api=1&destination=43.21937022193307,27.99535591366512&travelmode=driving"
     },
     {
@@ -206,9 +260,22 @@ var info_locations = [
             "location": "It is located in Southwest Bulgaria, Kyustendil district, Rila municipality."
         }],
         "image": "./image/rilski manastir/0.png",
-        "images": [{
-            "path": "./image/rilski manastir/1.jpg"
-        }],
+        "images": [
+            {
+              "path": "./image/rilski manastir/1.jpg"
+            },
+            {
+                "path": "./image/rilski manastir/1.jpg"
+            },
+            {
+                "path": "./image/rilski manastir/2.jpg"
+            },
+            {
+                "path": "./image/rilski manastir/2.jpg"
+            },
+            {
+                "path": "./image/rilski manastir/3.jpg"
+            }],
         "url": "https://www.google.com/maps/dir/?api=1&destination=42.133578247129456,23.340846356458897&travelmode=driving"
     },
     {
@@ -225,9 +292,22 @@ var info_locations = [
             "location": "It is located on both banks of the Maritsa River in the Upper Thracian Plain at 42° and 9′ north latitude and 24° and 45′ east longitude, and its lowest point is 160 m above sea level. Its territory is 101,981 sq. km, and the population of the city is about 338,153 people."
         }],
         "image": "./image/plovdiv/0.png",
-        "images": [{
-            "path": "./image/plovdiv/1.jpg"
-        }],
+        "images": [
+            {
+              "path": "./image/plovdiv/1.jpg"
+            },
+            {
+                "path": "./image/plovdiv/1.jpg"
+            },
+            {
+                "path": "./image/plovdiv/2.jpg"
+            },
+            {
+                "path": "./image/plovdiv/2.jpg"
+            },
+            {
+                "path": "./image/plovdiv/3.jpg"
+            }],
         "url": "https://www.google.com/maps/dir/?api=1&destination=42.13322283522093,24.74651133439881&travelmode=driving"
     },
     {
@@ -244,9 +324,23 @@ var info_locations = [
             "location": "Varna is the largest city in North-Eastern Bulgaria, located on the shores of the Black Sea and Lake Varna and is the administrative center of the municipality of the same name, Varna."
         }],
         "image": "./image/varna/0.png",
-        "images": [{
-            "path": "./image/varna/1.jpeg"
-        }],
+        "images": [
+            {
+              "path": "./image/varna/1.jpeg"
+            },
+            {
+                "path": "./image/varna/1.jpeg"
+            },
+            {
+                "path": "./image/varna/2.jpeg"
+            },
+            {
+                "path": "./image/varna/2.jpeg"
+            },
+            {
+                "path": "./image/varna/3.jpeg"
+            },
+    ],
         "url": "https://www.google.com/maps/dir/?api=1&destination=43.214070145268344,27.914753679216243&travelmode=driving"
     },
     {
@@ -268,10 +362,19 @@ var info_locations = [
                 "path": "./image/ezera/1.jpg"
             },
             {
+                "path": "./image/ezera/1.jpg"
+            },
+            {
                 "path": "./image/ezera/2.jpg"
             },
             {
-                "path": "./image/ezera/ne.jpg"
+                "path": "./image/ezera/2.jpg"
+            },
+            {
+                "path": "./image/ezera/3.jpg"
+            },
+            {
+                "path": "./image/ezera/3.jpg"
             },
             {
                 "path": "./image/ezera/4.jpg"
@@ -483,7 +586,7 @@ function openOffCanva() {
 
 function nextPhoto() {
     photoIndex = photoIndex + 1;
-    console.log(1);
+    console.log(photoIndex);
     setPhoto();
 }
 
