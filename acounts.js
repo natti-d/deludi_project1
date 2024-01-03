@@ -1,16 +1,19 @@
-var accounts = [
-    {
+var accounts = [{
+    "user": [{
         "id": 0,
         "username": "admin",
         "email": "admin@gmail.com",
         "password": "admin"
-    },
-    {
+    }]
+},
+{
+    "user": [{
         "id": 1,
         "username": "test",
         "email": "test@gmail.com",
         "password": "test"
-    }
+    }]
+}
     /*Shablon
     {
         "id": 0,
@@ -22,25 +25,32 @@ var accounts = [
 ];
 
 function validationLogIn() {
-    let email = document.getElementById('email').value;
-    let password = document.getElementById('password').value;
-    let username = document.getElementById('username').value;
+    let email_input = document.getElementById('email').value;
+    let password_input = document.getElementById('password').value;
+    let username_input = document.getElementById('username').value;
     let failed_Login = true;
 
-    for (let i = 0; i <= accounts.length; i++) {
-        if (username == accounts[i].username) {
-            if (email == accounts[i].email) {
-                if (password == accounts[i].password) {
+    /*for (let i = 0; i <= accounts.length; i++) {
+        console.log(accounts[i].username.toString());
+        if (username_input.toString() == (accounts[i].username).toString()) {
+            if (email_input.toString() == (accounts[i].email).toString()) {
+                if (password_input.toString() == (accounts[i].password).toString()) {
                     alert("Влязохте успешно!");
                     failed_Login = false;
                 }
             }
         }
+    }*/
+    for (let i = 0; i <= accounts.length; i++) {
+        if (username_input == accounts[i].user[0].username && email_input == accounts[i].user[0].email && password_input == accounts[i].user[0].password) {
+            alert("Sucessfully logged in.");
+            failed_Login = false;
+            break;
+        }
     }
-    console.log(1);
-    alert("Грешни данни! Моля проверете пак!");
 
-    if (failed_Login) {
+    if (failed_Login == true) {
+        alert("Грешни данни! Моля проверете пак!");
     }
 }
 
