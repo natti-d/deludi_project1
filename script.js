@@ -561,6 +561,78 @@ function Load() {
     }
 }
 
+function Load_About()
+{
+    let obj_conatiner = document.getElementById('objects-div');
+
+    for (let i = 0; i < 3; i++) {
+        let object_div1 = document.createElement("div");
+        object_div1.classList.add("col-md-4", "col-12");
+        obj_conatiner.appendChild(object_div1);
+
+        let object_div2 = document.createElement("div");
+        object_div2.classList.add("card");
+        object_div2.onmouseover = function () {
+            object_div2.style.boxShadow = "0 .5rem 1rem #1E4847";
+            object_div2.style.borderStyle = "hidden";
+            object_div2.style.transitionDuration = "0.75s";
+        }
+        object_div2.onmouseleave = function () {
+            object_div2.style.boxShadow = "none";
+            object_div2.borderStyle = "solid";
+            object_div2.transitionDuration = "0.75s";
+        }
+        object_div1.appendChild(object_div2);
+
+        if (i == lenght - 1) {
+            object_div1.classList.add("pb-md-0", "pb-5")
+            object_div2.classList.add("mb-md-0", "mb-3");
+        }
+
+        let object_image = document.createElement("img");
+        object_image.classList.add("card-img-top", "img-fluid");
+        
+        object_div2.appendChild(object_image);
+
+        let object_div3 = document.createElement("div");
+        object_div3.classList.add("card-body");
+        object_div3.style.backgroundColor = "#1E4847";
+        object_div2.appendChild(object_div3);
+
+        let h4 = document.createElement("h4");
+        h4.classList.add("card-title", "text-center", "break-word");
+        h4.style.color = "#FFFFFF";
+        h4.innerText = "";
+        object_div3.appendChild(h4);
+
+        if(i == 0)
+        {
+            object_image.src = info_locations[2].image;
+            h4.innerText = info_locations[2].BG[0].name_of_object;
+            object_id = 2;
+        }
+         if(i == 1)
+        {
+            object_image.src = info_locations[4].image;
+            h4.innerText = info_locations[4].BG[0].name_of_object;
+            object_id = 4;
+        }
+        if(i == 2)
+        {
+            object_image.src = info_locations[8].image;
+            h4.innerText = info_locations[8].BG[0].name_of_object;
+            object_id = 4;
+        }
+
+        object_div1.addEventListener("click", function () {
+
+            
+            photoIndex = 0;
+            openOffCanva();
+        });
+    }
+}
+
 function openOffCanva() {
     let info_object = document.getElementById("info-object");
     let name_of_offcanva = document.getElementById("name-of-offcanva");
