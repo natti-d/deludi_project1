@@ -405,6 +405,7 @@ var happened = 1;
 var url;
 var object_id;
 var photoIndex;
+var loaded_adout = false;
 
 function changeObekti() {
     activating('obekti');
@@ -420,7 +421,7 @@ function changeObekti() {
     //about page visible 
     let b = document.getElementById('aboutPage');
     b.classList.add("d-none");
-    
+
 }
 
 function changeKarta() {
@@ -462,7 +463,10 @@ function changeZanas() {
     //about page visible 
     let b = document.getElementById('aboutPage');
     b.classList.remove("d-none");
-    load_About();
+    if (loaded_adout == false) {
+        load_About();
+        loaded_adout = true;
+    }
 }
 
 function changeInfo() {
