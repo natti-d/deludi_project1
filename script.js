@@ -198,7 +198,7 @@ var info_locations = [
         "image": "./image/perperikon/0.png",
         "images": [
             {
-               "path": "./image/perperikon/1.jpg"
+                "path": "./image/perperikon/1.jpg"
             },
             {
                 "path": "./image/perperikon/1.jpg"
@@ -230,7 +230,7 @@ var info_locations = [
         "image": "./image/rezidenciq/0.png",
         "images": [
             {
-              "path": "./image/rezidenciq/1.jpg"
+                "path": "./image/rezidenciq/1.jpg"
             },
             {
                 "path": "./image/rezidenciq/1.jpg"
@@ -262,7 +262,7 @@ var info_locations = [
         "image": "./image/rilski manastir/0.png",
         "images": [
             {
-              "path": "./image/rilski manastir/1.jpg"
+                "path": "./image/rilski manastir/1.jpg"
             },
             {
                 "path": "./image/rilski manastir/1.jpg"
@@ -294,7 +294,7 @@ var info_locations = [
         "image": "./image/plovdiv/0.png",
         "images": [
             {
-              "path": "./image/plovdiv/1.jpg"
+                "path": "./image/plovdiv/1.jpg"
             },
             {
                 "path": "./image/plovdiv/1.jpg"
@@ -326,7 +326,7 @@ var info_locations = [
         "image": "./image/varna/0.png",
         "images": [
             {
-              "path": "./image/varna/1.jpeg"
+                "path": "./image/varna/1.jpeg"
             },
             {
                 "path": "./image/varna/1.jpeg"
@@ -340,7 +340,7 @@ var info_locations = [
             {
                 "path": "./image/varna/3.jpeg"
             },
-    ],
+        ],
         "url": "https://www.google.com/maps/dir/?api=1&destination=43.214070145268344,27.914753679216243&travelmode=driving"
     },
     {
@@ -412,6 +412,15 @@ function changeObekti() {
     deactivating('registraciq');
     deactivating('karta');
     deactivating('about');
+
+    //main page visible 
+    let a = document.getElementById('mainpage');
+    a.classList.remove("d-none");
+
+    //about page visible 
+    let b = document.getElementById('aboutPage');
+    b.classList.add("d-none");
+    
 }
 
 function changeKarta() {
@@ -445,6 +454,15 @@ function changeZanas() {
     deactivating('obekti');
     deactivating('registraciq');
     deactivating('karta');
+
+    //main page invisible 
+    let a = document.getElementById('mainpage');
+    a.classList.add("d-none");
+
+    //about page visible 
+    let b = document.getElementById('aboutPage');
+    b.classList.remove("d-none");
+    load_About();
 }
 
 function changeInfo() {
@@ -561,9 +579,9 @@ function Load() {
     }
 }
 
-function Load_About()
-{
-    let obj_conatiner = document.getElementById('objects-div');
+function load_About() {
+    console.log(1);
+    let obj_conatiner = document.getElementById('object-div');
 
     for (let i = 0; i < 3; i++) {
         let object_div1 = document.createElement("div");
@@ -591,7 +609,7 @@ function Load_About()
 
         let object_image = document.createElement("img");
         object_image.classList.add("card-img-top", "img-fluid");
-        
+
         object_div2.appendChild(object_image);
 
         let object_div3 = document.createElement("div");
@@ -605,28 +623,32 @@ function Load_About()
         h4.innerText = "";
         object_div3.appendChild(h4);
 
-        if(i == 0)
-        {
+        if (i == 0) {
             object_image.src = info_locations[2].image;
             h4.innerText = info_locations[2].BG[0].name_of_object;
             object_id = 2;
         }
-         if(i == 1)
-        {
+        if (i == 1) {
             object_image.src = info_locations[4].image;
             h4.innerText = info_locations[4].BG[0].name_of_object;
             object_id = 4;
         }
-        if(i == 2)
-        {
+        if (i == 2) {
             object_image.src = info_locations[8].image;
             h4.innerText = info_locations[8].BG[0].name_of_object;
-            object_id = 4;
+            object_id = 8;
         }
 
         object_div1.addEventListener("click", function () {
-
-            
+            if (i == 0) {
+                object_id = 2;
+            }
+            if (i == 1) {
+                object_id = 4;
+            }
+            if (i == 2) {
+                object_id = 8;
+            }
             photoIndex = 0;
             openOffCanva();
         });

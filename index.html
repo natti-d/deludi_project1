@@ -65,32 +65,70 @@
     <div class="vw-100 d-lg-none d-block mt-3 py-2" style="background-color: #1E4847; color: #FFF;">
         <h1 class="break-word text-center" id="page-name">Име на страница</h1>
     </div>
-    <!--banner-->
-    <div class="card text-bg-dark d-none " style="border-radius: 0;" id="banner"> <!-- add d-lg-block-->
-        <img src="/image/background.jpg" class="card-img" alt=""
-            style="filter: blur(6px); background-size: cover;  height: 50vh;">
-        <div class="card-img-overlay d-flex justify-content-center pt-5">
-            <p class="card-text h2 pt-5 " style="font-family: Arial, Helvetica, sans-serif; color:aliceblue;">
-                С Vecto може да си харесайте дестинация за пътуване и ние ще ви погнем във всяка ваша стъпка.
-                <br>
-                Използвайте нашата карта и изберете дестинация за вашето пътуване.
-                <br>
-                Ще може да видите как да стигнете до избранат дестинация.
-                <br>
-                Желаем ви приятно пътуване!
+    <!--MainPgae-->
+    <div id="mainpage">
+        <!--ОБЕКТИ-->
+        <div class="row m-4 d-flex position-relative overflow-auto pb-5" id="objects-div" style="max-height: 60vh;"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+        </div>
+    </div>
+    <!--AboutPage-->
+    <div class="d-none overflow-x-hidden" id="aboutPage" style="max-height: 60vh;">
+        <!--banner-->
+        <div class="card text-bg-dark d-none d-lg-block" style="border-radius: 0;" id="banner"> <!-- add d-lg-block-->
+            <img src="/image/background.jpg" class="card-img" alt=""
+                style="filter: blur(6px); background-size: cover;  height: 36vh;">
+            <div class="card-img-overlay d-flex justify-content-center pt-5">
+                <p class="card-text h2 pt-5 " style="font-family: Arial, Helvetica, sans-serif; color:aliceblue;">
+                    С Vecto може да си харесайте дестинация за пътуване и ние ще ви погнем във всяка ваша стъпка.
+                    <br>
+                    Използвайте нашата карта и изберете дестинация за вашето пътуване.
+                    <br>
+                    Ще може да видите как да стигнете до избранат дестинация.
+                    <br>
+                    Желаем ви приятно пътуване!
+                </p>
+            </div>
+        </div>
+
+        <div class="vw-100 d-flex align-items-center p-5 justify-content-center"
+            style="background-color: #1E4847; color: #FFF;" id="top3Text">
+            <h1 class="break-word text-center">Най-посещавани обекти</h1>
+        </div>
+
+        <!--ОБЕКТИ-->
+        <div class="row m-4 d-flex position-relative overflow-auto pb-5" id="object-div" style="max-height: 60vh;"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+        </div>
+
+        <div class="d-lg-none" id="shrinkInfo"> <!--add d-lg-none-->
+            <p class="d-inline-flex gap-1">
+                <button class="btn btn-success mx-5 my-2 btn-lg break-word" type="button" onclick="changeInfo()"
+                    data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false"
+                    aria-controls="collapseExample" id="moreInfo">
+                    Вижте повече информация за сайта
+                </button>
+
             </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <p class="h2" style="font-family: Arial, Helvetica, sans-serif;">
+                        С Vecto може да си харесайте дестинация за пътуване и ние ще ви погнем във всяка ваша стъпка.
+                        <br>
+                        Използвайте нашата карта и изберете дестинация за вашето пътуване.
+                        <br>
+                        Ще може да видите как да стигнете до избранат дестинация.
+                        <br>
+                        Желаем ви приятно пътуване.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="vw-100 d-flex align-items-center p-5 justify-content-center d-none"
-        style="background-color: #1E4847; color: #FFF;" id="top3Text">
-        <h1 class="break-word text-center">Най-посещавани обекти</h1>
-    </div>
 
-    <!--ОБЕКТИ-->
-    <div class="row m-4 d-flex position-relative overflow-auto pb-5" id="objects-div" style="max-height: 60vh;"
-        data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-    </div>
+
+
 
     <!--OFFCANVA INFO-->
     <div class="vh-100 offcanvas offcanvas-bottom text-center d-block" tabindex="-1" id="offcanvasBottom"
@@ -187,29 +225,7 @@
             </form>
         </div>
     </div>
-    <div class="d-none" id = "shrinkInfo"> <!--add d-lg-none-->
-        <p class="d-inline-flex gap-1">
-            <button class="btn btn-success mx-5 my-2 btn-lg break-word" type="button" onclick="changeInfo()"
-                data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
-                id="moreInfo">
-                Вижте повече информация за сайта
-            </button>
 
-        </p>
-        <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-                <p class="h2" style="font-family: Arial, Helvetica, sans-serif;">
-                    С Vecto може да си харесайте дестинация за пътуване и ние ще ви погнем във всяка ваша стъпка.
-                    <br>
-                    Използвайте нашата карта и изберете дестинация за вашето пътуване.
-                    <br>
-                    Ще може да видите как да стигнете до избранат дестинация.
-                    <br>
-                    Желаем ви приятно пътуване.
-                </p>
-            </div>
-        </div>
-    </div>
 
     <!--FOOTER-->
     <div class="vh-25 d-block d-md-none"></div>
